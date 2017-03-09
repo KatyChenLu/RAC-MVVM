@@ -4,4 +4,6 @@ target ‘RACRequestTest’ do
    pod 'ReactiveCocoa', '~> 2.1.8’
 pod 'MJExtension', '~> 2.5.12'
 pod ‘SDWebImage’
+pod "ESTabBarController-swift"
+use_frameworks!
 end

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UITabBarController *tabVC = [[UITabBarController alloc] init];
+    tabVC.view.backgroundColor = [UIColor whiteColor];
+    
+    ViewController *oneVC = [[ViewController alloc]init];
+    LoginViewController *twoVC = [[LoginViewController alloc] init];
+    
+    oneVC.title = @"request";
+    twoVC.title = @"login";
+    
+    
+    UINavigationController *navC1 = [[UINavigationController alloc] initWithRootViewController:oneVC];
+    UINavigationController *navC2 = [[UINavigationController alloc] initWithRootViewController:twoVC];
+    
+    
+    tabVC.viewControllers        = @[navC1, navC2];
+    
+    self.window.rootViewController = tabVC;
+    
     return YES;
 }
 

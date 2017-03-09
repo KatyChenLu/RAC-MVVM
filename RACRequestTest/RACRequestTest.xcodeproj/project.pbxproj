@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE784757CB39214169EF1AD1 /* libPods-RACRequestTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA12C9EA5A9E167EEC8A5DA /* libPods-RACRequestTest.a */; };
+		BD9FF9D19DBCBA6566ECC72D /* Pods_RACRequestTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F9246DB5431863C29418CB /* Pods_RACRequestTest.framework */; };
 		EC4A72B21E6EA2650048D95E /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4A72B11E6EA2650048D95E /* Book.m */; };
 		EC4A72B51E6EA2BA0048D95E /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4A72B41E6EA2BA0048D95E /* HttpManager.m */; };
+		EC596BEF1E6FE8D800EA0483 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC596BEE1E6FE8D800EA0483 /* LoginViewController.m */; };
 		EC73F4261E6D580E0011CC92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F4251E6D580E0011CC92 /* main.m */; };
 		EC73F4291E6D580F0011CC92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F4281E6D580F0011CC92 /* AppDelegate.m */; };
 		EC73F42C1E6D580F0011CC92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F42B1E6D580F0011CC92 /* ViewController.m */; };
@@ -21,14 +22,17 @@
 
 /* Begin PBXFileReference section */
 		652500476208F415FB35C108 /* Pods-RACRequestTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACRequestTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACRequestTest/Pods-RACRequestTest.release.xcconfig"; sourceTree = "<group>"; };
+		A2F9246DB5431863C29418CB /* Pods_RACRequestTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACRequestTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A651D8DE89459553DAD06968 /* Pods-RACRequestTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACRequestTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACRequestTest/Pods-RACRequestTest.debug.xcconfig"; sourceTree = "<group>"; };
-		ABA12C9EA5A9E167EEC8A5DA /* libPods-RACRequestTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACRequestTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4A72B01E6EA2650048D95E /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		EC4A72B11E6EA2650048D95E /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		EC4A72B31E6EA2BA0048D95E /* HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
 		EC4A72B41E6EA2BA0048D95E /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
 		EC4A72B61E6EA2D00048D95E /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		EC4A72BC1E6EA42C0048D95E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EC596BED1E6FE8D800EA0483 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		EC596BEE1E6FE8D800EA0483 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		EC596BF01E6FF22000EA0483 /* RACRequestTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RACRequestTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		EC73F4211E6D580E0011CC92 /* RACRequestTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACRequestTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC73F4251E6D580E0011CC92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC73F4271E6D580F0011CC92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE784757CB39214169EF1AD1 /* libPods-RACRequestTest.a in Frameworks */,
+				BD9FF9D19DBCBA6566ECC72D /* Pods_RACRequestTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +71,7 @@
 		9483278728DBCE5DEC4C6DEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ABA12C9EA5A9E167EEC8A5DA /* libPods-RACRequestTest.a */,
+				A2F9246DB5431863C29418CB /* Pods_RACRequestTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -75,6 +79,8 @@
 		EC4A72B71E6EA2E20048D95E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EC596BED1E6FE8D800EA0483 /* LoginViewController.h */,
+				EC596BEE1E6FE8D800EA0483 /* LoginViewController.m */,
 				EC73F42A1E6D580F0011CC92 /* ViewController.h */,
 				EC73F42B1E6D580F0011CC92 /* ViewController.m */,
 			);
@@ -142,6 +148,7 @@
 				EC73F4321E6D580F0011CC92 /* LaunchScreen.storyboard */,
 				EC73F4351E6D580F0011CC92 /* Info.plist */,
 				EC73F4241E6D580E0011CC92 /* Supporting Files */,
+				EC596BF01E6FF22000EA0483 /* RACRequestTest-Bridging-Header.h */,
 			);
 			path = RACRequestTest;
 			sourceTree = "<group>";
@@ -188,6 +195,7 @@
 				TargetAttributes = {
 					EC73F4201E6D580E0011CC92 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -280,6 +288,7 @@
 				EC73F42C1E6D580F0011CC92 /* ViewController.m in Sources */,
 				EC73F4291E6D580F0011CC92 /* AppDelegate.m in Sources */,
 				EC4A72B51E6EA2BA0048D95E /* HttpManager.m in Sources */,
+				EC596BEF1E6FE8D800EA0483 /* LoginViewController.m in Sources */,
 				EC73F43D1E6D617E0011CC92 /* RequestViewModel.m in Sources */,
 				EC73F4261E6D580E0011CC92 /* main.m in Sources */,
 			);
@@ -402,11 +411,15 @@
 			baseConfigurationReference = A651D8DE89459553DAD06968 /* Pods-RACRequestTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RACRequestTest/PrefixHeader.pch";
 				INFOPLIST_FILE = RACRequestTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lulu.Chen.RACRequestTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RACRequestTest/RACRequestTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -415,11 +428,14 @@
 			baseConfigurationReference = 652500476208F415FB35C108 /* Pods-RACRequestTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RACRequestTest/PrefixHeader.pch";
 				INFOPLIST_FILE = RACRequestTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lulu.Chen.RACRequestTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RACRequestTest/RACRequestTest-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
