@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Singleton.h"
-#import <AFNetworking.h>
+#import "AFNetworking.h"
 
 @interface HttpManager : NSObject
 

@@ -25,6 +25,7 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - ZIKConstraintsGuard (1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - MJExtension (~> 2.5.12)
   - ReactiveCocoa (~> 2.1.8)
   - SDWebImage
+  - ZIKConstraintsGuard
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -39,7 +41,8 @@ SPEC CHECKSUMS:
   MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e
   ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  ZIKConstraintsGuard: 4231657a3a2da15a7748a1911982c537b8099404
 
-PODFILE CHECKSUM: f51b3c069541a1b26da833b7219921ff10bfb37d
+PODFILE CHECKSUM: 41bdead5c3c037fbeb1302e2a4ed666d2865add4
 
 COCOAPODS: 1.2.0

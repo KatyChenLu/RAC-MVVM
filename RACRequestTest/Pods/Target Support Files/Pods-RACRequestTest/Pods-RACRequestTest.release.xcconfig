@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/ESTabBarController-swift" "$PODS_CONFIGURATION_BUILD_DIR/MJExtension" "$PODS_CONFIGURATION_BUILD_DIR/ReactiveCocoa" "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/ESTabBarController-swift" "$PODS_CONFIGURATION_BUILD_DIR/MJExtension" "$PODS_CONFIGURATION_BUILD_DIR/ReactiveCocoa" "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage" "$PODS_CONFIGURATION_BUILD_DIR/ZIKConstraintsGuard"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking/AFNetworking.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/ESTabBarController-swift/ESTabBarController_swift.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MJExtension/MJExtension.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/ReactiveCocoa/ReactiveCocoa.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage/SDWebImage.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "ESTabBarController_swift" -framework "MJExtension" -framework "ReactiveCocoa" -framework "SDWebImage"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking/AFNetworking.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/ESTabBarController-swift/ESTabBarController_swift.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MJExtension/MJExtension.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/ReactiveCocoa/ReactiveCocoa.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage/SDWebImage.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/ZIKConstraintsGuard/ZIKConstraintsGuard.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "ESTabBarController_swift" -framework "MJExtension" -framework "ReactiveCocoa" -framework "SDWebImage" -framework "ZIKConstraintsGuard"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

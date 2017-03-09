@@ -1,0 +1,6 @@
+framework module ZIKConstraintsGuard {
+  umbrella header "ZIKConstraintsGuard-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "LoginViewController.h"
+#import "ZIKConstraintsGuard.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,12 @@
     tabVC.view.backgroundColor = [UIColor whiteColor];
     
     ViewController *oneVC = [[ViewController alloc]init];
-    LoginViewController *twoVC = [[LoginViewController alloc] init];
+    
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    
+    LoginViewController *twoVC = [story instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    
+    
     
     oneVC.title = @"request";
     twoVC.title = @"login";
@@ -36,7 +42,28 @@
     tabVC.viewControllers        = @[navC1, navC2];
     
     self.window.rootViewController = tabVC;
+    //monitor constraint conflict
+    [ZIKConstraintsGuard monitorUnsatisfiableConstraintWithHandler:^(UIView *view,
+                                                                     UIViewController *viewController,
+                                                                     NSLayoutConstraint *constraintToBreak,
+                                                                     NSArray<NSLayoutConstraint *> *currentConstraints,
+                                                                     NSString *description) {
+        
+        NSLog(@"检测到约束冲突！");
+        NSString *className = NSStringFromClass([viewController class]);
+        if ([className hasPrefix:@"UI"] && ![className isEqualToString:@"UIApplication"]) {
+            //使用某些系统控件时会出现约束冲突，例如UIAlertController
+            NSLog(@"ignore conflict in UIKit:%@",viewController);
+            return;
+        }
+        NSLog(@"冲突所在的viewController:\n%@ \nview:\n%@",viewController,view);
+        //使用recursiveDescription来打印view的层级，注意这是private API
+        NSLog(@"view hierarchy:\n%@",[view valueForKeyPath:@"recursiveDescription"]);
+        NSLog(@"目前所有的约束:\n%@",currentConstraints);
+        NSLog(@"系统尝试打破的约束:\n%@",constraintToBreak);
+    }];
     
+ 
     return YES;
 }
 
