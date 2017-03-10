@@ -50,7 +50,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U7z-gh-2yg">
-                                <rect key="frame" x="294" y="282" width="34" height="30"/>
+                                <rect key="frame" x="123" y="282" width="205" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="34G-Tv-BO8"/>
                                     <constraint firstAttribute="width" constant="205" id="caa-Nc-Sze"/>
@@ -83,6 +83,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QJc-nt-aFF" firstAttribute="centerY" secondItem="U7z-gh-2yg" secondAttribute="centerY" id="4Yj-be-B4p"/>
+                            <constraint firstItem="wJE-Ws-rPx" firstAttribute="top" secondItem="U7z-gh-2yg" secondAttribute="bottom" constant="38" id="DUn-PJ-tbd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="U7z-gh-2yg" secondAttribute="trailing" constant="31" id="I60-Yh-Mac"/>
                             <constraint firstItem="wJE-Ws-rPx" firstAttribute="centerX" secondItem="gNq-pg-16x" secondAttribute="centerX" id="Mab-kf-tpb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ncd-e6-f4B" secondAttribute="trailing" constant="31" id="NQq-e2-OlN"/>
@@ -90,8 +91,6 @@
                             <constraint firstItem="Ncd-e6-f4B" firstAttribute="top" secondItem="Tlv-3w-G4B" secondAttribute="bottom" constant="196" id="Ph0-YI-Oka"/>
                             <constraint firstItem="QJc-nt-aFF" firstAttribute="leading" secondItem="gNq-pg-16x" secondAttribute="leadingMargin" constant="31" id="UaZ-H6-wS8"/>
                             <constraint firstItem="lKb-ZJ-9k2" firstAttribute="leading" secondItem="gNq-pg-16x" secondAttribute="leadingMargin" constant="31" id="Wyx-il-poP"/>
-                            <constraint firstItem="JT1-67-8OG" firstAttribute="top" secondItem="wJE-Ws-rPx" secondAttribute="bottom" constant="287" id="dYb-Jj-cUQ"/>
-                            <constraint firstItem="wJE-Ws-rPx" firstAttribute="width" secondItem="U7z-gh-2yg" secondAttribute="width" id="riR-V9-lkU"/>
                             <constraint firstItem="lKb-ZJ-9k2" firstAttribute="centerY" secondItem="Ncd-e6-f4B" secondAttribute="centerY" id="xct-0d-yCM"/>
                         </constraints>
                     </view>

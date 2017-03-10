@@ -41,12 +41,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self bindModel];
 }
 
 - (void)bindModel {
     RAC(self.loginVM.account, username) = _userNameTField.rac_textSignal;
     RAC(self.loginVM.account, pwd) = _passWordTField.rac_textSignal;
     
+    RAC(self.loginBtn, enabled) = self.loginVM.enableLoginSignal;
+    [[_loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
+        [self.loginVM.loginCommand execute:nil];
+    }];
     
 }
 

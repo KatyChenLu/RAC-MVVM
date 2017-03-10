@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD9FF9D19DBCBA6566ECC72D /* Pods_RACRequestTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F9246DB5431863C29418CB /* Pods_RACRequestTest.framework */; };
+		EC3C1B211E7251C50017D289 /* checkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3C1B201E7251C50017D289 /* checkTool.m */; };
 		EC4949CA1E71268F0031C091 /* loginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4949C91E71268F0031C091 /* loginViewModel.m */; };
 		EC4A72B21E6EA2650048D95E /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4A72B11E6EA2650048D95E /* Book.m */; };
 		EC4A72B51E6EA2BA0048D95E /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4A72B41E6EA2BA0048D95E /* HttpManager.m */; };
@@ -25,6 +26,8 @@
 		652500476208F415FB35C108 /* Pods-RACRequestTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACRequestTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACRequestTest/Pods-RACRequestTest.release.xcconfig"; sourceTree = "<group>"; };
 		A2F9246DB5431863C29418CB /* Pods_RACRequestTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACRequestTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A651D8DE89459553DAD06968 /* Pods-RACRequestTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACRequestTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACRequestTest/Pods-RACRequestTest.debug.xcconfig"; sourceTree = "<group>"; };
+		EC3C1B1F1E7251C50017D289 /* checkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkTool.h; sourceTree = "<group>"; };
+		EC3C1B201E7251C50017D289 /* checkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = checkTool.m; sourceTree = "<group>"; };
 		EC4949C81E71268F0031C091 /* loginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewModel.h; sourceTree = "<group>"; };
 		EC4949C91E71268F0031C091 /* loginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewModel.m; sourceTree = "<group>"; };
 		EC4A72B01E6EA2650048D95E /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 				EC4A72B31E6EA2BA0048D95E /* HttpManager.h */,
 				EC4A72B41E6EA2BA0048D95E /* HttpManager.m */,
 				EC4A72B61E6EA2D00048D95E /* Singleton.h */,
+				EC3C1B1F1E7251C50017D289 /* checkTool.h */,
+				EC3C1B201E7251C50017D289 /* checkTool.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3C1B211E7251C50017D289 /* checkTool.m in Sources */,
 				EC4949CA1E71268F0031C091 /* loginViewModel.m in Sources */,
 				EC4A72B21E6EA2650048D95E /* Book.m in Sources */,
 				EC73F42C1E6D580F0011CC92 /* ViewController.m in Sources */,

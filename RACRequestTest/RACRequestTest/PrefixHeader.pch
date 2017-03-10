@@ -17,6 +17,8 @@
 #import <MJExtension/MJExtension.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
+#import <MBProgressHUD/MBProgressHUD.h>
+
 #define BASE_URL @"https://api.douban.com/"
 #define OPT_POST @"post"
 #define OPT_GET @"get"

@@ -7,6 +7,8 @@
 //
 
 #import "loginViewModel.h"
+#import "AppDelegate.h"
+#import "checkTool.h"
 
 @implementation loginViewModel
 
@@ -32,8 +34,13 @@
         NSLog(@"点击了登录");
         RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
             
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [subscriber sendNext:@"登陆成功"];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                if ([checkTool checkTelNumber:_account.username] && [checkTool checkPassword:_account.pwd]) {
+                   [subscriber sendNext:@"login seccess"];
+                }else {
+                    [subscriber sendNext:@"login fail"];
+                }
+                
                 [subscriber sendCompleted];
             });
             
@@ -42,6 +49,29 @@
         return signal;
     }];
     
+    [_loginCommand.executionSignals.switchToLatest subscribeNext:^(id x) {
+        if ([x isEqualToString:@"login seccess"]) {
+            NSLog(@"登陆成功");
+        }else if ([x isEqualToString:@"login fail"]){
+            NSLog(@"登录失败");
+        }
+    }];
+    [_loginCommand.executing subscribeNext:^(id x) {
+        
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        if ([x isEqualToNumber:@(YES)]) {
+            [MBProgressHUD showHUDAddedTo:window animated:YES];
+            
+        }else{
+            [MBProgressHUD hideHUDForView:window animated:YES];
+        }
+    }];
+    
 }
+
+@end
+
+@implementation AccountModel
+
 
 @end
