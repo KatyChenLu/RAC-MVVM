@@ -43,6 +43,13 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)bindModel {
+    RAC(self.loginVM.account, username) = _userNameTField.rac_textSignal;
+    RAC(self.loginVM.account, pwd) = _passWordTField.rac_textSignal;
+    
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

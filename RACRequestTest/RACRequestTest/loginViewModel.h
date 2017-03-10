@@ -8,6 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+@class AccountModel;
 @interface loginViewModel : NSObject
+
+@property (nonatomic, strong) AccountModel *account;
+@property (nonatomic, strong, readonly) RACCommand *loginCommand;
+@property (nonatomic, strong, readonly) RACSignal *enableLoginSignal;
+
+@end
+
+@interface AccountModel : NSObject
+
+@property (nonatomic, copy) NSString *username;
+@property (nonatomic, copy) NSString *pwd;
 
 @end
