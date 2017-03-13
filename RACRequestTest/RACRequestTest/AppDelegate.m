@@ -39,7 +39,7 @@
     UINavigationController *navC2 = [[UINavigationController alloc] initWithRootViewController:twoVC];
     
     
-    tabVC.viewControllers        = @[navC1, navC2];
+    tabVC.viewControllers        = @[navC2, navC1];
     
     self.window.rootViewController = tabVC;
     //monitor constraint conflict

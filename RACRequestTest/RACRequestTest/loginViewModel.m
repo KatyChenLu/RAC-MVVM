@@ -56,10 +56,12 @@
             NSLog(@"登录失败");
         }
     }];
-    [_loginCommand.executing subscribeNext:^(id x) {
+    //不懂为什么要用skip忽略一次
+    [[_loginCommand.executing skip:1] subscribeNext:^(id x) {
         
         UIWindow *window = [UIApplication sharedApplication].keyWindow;
         if ([x isEqualToNumber:@(YES)]) {
+            
             [MBProgressHUD showHUDAddedTo:window animated:YES];
             
         }else{
