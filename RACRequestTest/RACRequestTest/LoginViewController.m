@@ -28,11 +28,12 @@
 #import "loginViewModel.h"
 
 
-@interface LoginViewController ()
+@interface LoginViewController ()<UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *userNameTField;
 @property (weak, nonatomic) IBOutlet UITextField *passWordTField;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 @property (nonatomic, strong) loginViewModel *loginVM;
+@property (weak, nonatomic) IBOutlet UITextView *testTextView;
 
 @end
 
@@ -42,6 +43,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self bindModel];
+    self.testTextView.delegate = self;
 }
 
 - (void)bindModel {
@@ -70,14 +72,30 @@
 }
 
 
-/*
-#pragma mark - Navigation
+#pragma mark ——— UITextViewDelegate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)textViewDidChange:(UITextView *)textView {
+    if (textView.markedTextRange ==nil) {
+        NSString *topicPattern = @"#[^#]+#";
+        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:topicPattern options:0 error:nil];
+        NSRange range = NSMakeRange(0, textView.attributedText.length);
+        NSArray *results = [regex matchesInString:textView.attributedText.string options:0 range:range];
+        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:textView.attributedText.string];
+        for (NSTextCheckingResult *result in results) {
+            [attributedString addAttributes:@{NSForegroundColorAttributeName : [UIColor redColor]} range:result.range];
+        }
+        textView.attributedText = attributedString;
+    }
 }
-*/
+
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

@@ -79,10 +79,21 @@
                                 </constraints>
                                 <state key="normal" title="login"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UDW-pq-rfJ">
+                                <rect key="frame" x="67" y="39" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.95437104994018307" green="0.83343685069388396" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="iUM-YP-FeD"/>
+                                    <constraint firstAttribute="height" constant="128" id="k16-CN-XNy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QJc-nt-aFF" firstAttribute="centerY" secondItem="U7z-gh-2yg" secondAttribute="centerY" id="4Yj-be-B4p"/>
+                            <constraint firstItem="UDW-pq-rfJ" firstAttribute="top" secondItem="Tlv-3w-G4B" secondAttribute="bottom" constant="19" id="6z0-zx-QyM"/>
                             <constraint firstItem="wJE-Ws-rPx" firstAttribute="top" secondItem="U7z-gh-2yg" secondAttribute="bottom" constant="38" id="DUn-PJ-tbd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="U7z-gh-2yg" secondAttribute="trailing" constant="31" id="I60-Yh-Mac"/>
                             <constraint firstItem="wJE-Ws-rPx" firstAttribute="centerX" secondItem="gNq-pg-16x" secondAttribute="centerX" id="Mab-kf-tpb"/>
@@ -91,12 +102,14 @@
                             <constraint firstItem="Ncd-e6-f4B" firstAttribute="top" secondItem="Tlv-3w-G4B" secondAttribute="bottom" constant="196" id="Ph0-YI-Oka"/>
                             <constraint firstItem="QJc-nt-aFF" firstAttribute="leading" secondItem="gNq-pg-16x" secondAttribute="leadingMargin" constant="31" id="UaZ-H6-wS8"/>
                             <constraint firstItem="lKb-ZJ-9k2" firstAttribute="leading" secondItem="gNq-pg-16x" secondAttribute="leadingMargin" constant="31" id="Wyx-il-poP"/>
+                            <constraint firstItem="UDW-pq-rfJ" firstAttribute="centerX" secondItem="gNq-pg-16x" secondAttribute="centerX" id="nUk-y5-upQ"/>
                             <constraint firstItem="lKb-ZJ-9k2" firstAttribute="centerY" secondItem="Ncd-e6-f4B" secondAttribute="centerY" id="xct-0d-yCM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="wJE-Ws-rPx" id="XJZ-8j-4oj"/>
                         <outlet property="passWordTField" destination="U7z-gh-2yg" id="S5j-x1-EKq"/>
+                        <outlet property="testTextView" destination="UDW-pq-rfJ" id="uY1-aG-2pb"/>
                         <outlet property="userNameTField" destination="Ncd-e6-f4B" id="qCE-Lt-Vtk"/>
                     </connections>
                 </viewController>
