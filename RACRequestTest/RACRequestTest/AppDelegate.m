@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "LoginViewController.h"
 #import "ZIKConstraintsGuard.h"
+#import "tabTestViewController.h"
 
 @interface AppDelegate ()
 
@@ -29,17 +30,21 @@
     
     LoginViewController *twoVC = [story instantiateViewControllerWithIdentifier:@"LoginViewController"];
     
+    tabTestViewController *thireVC = [[tabTestViewController alloc] init];
     
     
     oneVC.title = @"request";
     twoVC.title = @"login";
+    thireVC.title = @"table";
     
     
     UINavigationController *navC1 = [[UINavigationController alloc] initWithRootViewController:oneVC];
     UINavigationController *navC2 = [[UINavigationController alloc] initWithRootViewController:twoVC];
+    UINavigationController *navC3 = [[UINavigationController alloc] initWithRootViewController:thireVC];
     
     
-    tabVC.viewControllers        = @[navC2, navC1];
+    
+    tabVC.viewControllers        = @[navC2, navC1, navC3];
     
     self.window.rootViewController = tabVC;
     //monitor constraint conflict
