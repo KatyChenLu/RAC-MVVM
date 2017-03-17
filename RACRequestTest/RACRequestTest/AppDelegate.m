@@ -44,7 +44,7 @@
     
     
     
-    tabVC.viewControllers        = @[navC2, navC1, navC3];
+    tabVC.viewControllers        = @[navC2, navC1];
     
     self.window.rootViewController = tabVC;
     //monitor constraint conflict
