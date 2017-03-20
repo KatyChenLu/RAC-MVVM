@@ -38,6 +38,11 @@
     thireVC.title = @"table";
     //secend
     
+    
+    
+    
+    
+    
     UINavigationController *navC1 = [[UINavigationController alloc] initWithRootViewController:oneVC];
     UINavigationController *navC2 = [[UINavigationController alloc] initWithRootViewController:twoVC];
     
