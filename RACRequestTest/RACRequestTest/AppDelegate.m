@@ -40,11 +40,13 @@
     //first
 
     //secend
+
     
     
     
     
     
+
 
     
     UINavigationController *navC1 = [[UINavigationController alloc] initWithRootViewController:oneVC];
