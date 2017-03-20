@@ -37,11 +37,6 @@
     twoVC.title = @"login";
     thireVC.title = @"table";
 
-    //first
-
-    //secend
-
-    
     
     
     
