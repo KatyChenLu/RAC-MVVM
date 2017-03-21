@@ -36,16 +36,6 @@
     oneVC.title = @"request";
     twoVC.title = @"login";
     thireVC.title = @"table";
-
-    
-    //test1
-    
-    
-
-//test2
-    
-    //test2 diercitijiao
-    //test3
     
     UINavigationController *navC1 = [[UINavigationController alloc] initWithRootViewController:oneVC];
     UINavigationController *navC2 = [[UINavigationController alloc] initWithRootViewController:twoVC];
