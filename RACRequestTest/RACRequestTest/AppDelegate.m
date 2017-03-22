@@ -42,6 +42,7 @@
     UINavigationController *navC3 = [[UINavigationController alloc] initWithRootViewController:twoVC];
     
     
+    //先上传
     tabVC.viewControllers        = @[navC2, navC1,navC3];
     
     self.window.rootViewController = tabVC;
