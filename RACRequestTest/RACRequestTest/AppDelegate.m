@@ -42,6 +42,8 @@
     UINavigationController *navC3 = [[UINavigationController alloc] initWithRootViewController:twoVC];
     
     
+    
+    //gengzheng
     tabVC.viewControllers        = @[navC2, navC1,navC3];
     
     self.window.rootViewController = tabVC;
