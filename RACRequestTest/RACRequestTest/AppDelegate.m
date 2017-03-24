@@ -45,6 +45,7 @@
     
     self.window.rootViewController = tabVC;
     //monitor constraint conflict
+    //Friday test
     [ZIKConstraintsGuard monitorUnsatisfiableConstraintWithHandler:^(UIView *view,
                                                                      UIViewController *viewController,
                                                                      NSLayoutConstraint *constraintToBreak,
