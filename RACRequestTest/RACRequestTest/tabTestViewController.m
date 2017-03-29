@@ -67,7 +67,6 @@
 -(void)creatCategaryView
 {
     self.categoryView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 45)];
-    //    self.categoryView.backgroundColor = [UIColor whiteColor];
     
     NSMutableArray * arr = [NSMutableArray arrayWithCapacity:2];
     for ( int i = 0 ; i < 2; i++) {
