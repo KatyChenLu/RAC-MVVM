@@ -31,21 +31,21 @@
 @implementation tabTestViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-  
     
     [self creatCategaryView];
+    
 }
 
--(void)creatTabelView
-{
+- (void)creatTabelView{
     
     self.pageViewVc = [[UIPageViewController alloc]initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     
     self.pageViewVc.delegate = self;
+    
     self.pageViewVc.dataSource = self;
-    
-    
+        
     [self.pageViewVc setViewControllers:@[self.oneVC] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {
         
         
@@ -64,11 +64,12 @@
 }
 
 
--(void)creatCategaryView
-{
+- (void)creatCategaryView{
+    
     self.categoryView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 45)];
     
     NSMutableArray * arr = [NSMutableArray arrayWithCapacity:2];
+    
     for ( int i = 0 ; i < 2; i++) {
         
         UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
