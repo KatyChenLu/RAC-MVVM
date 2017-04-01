@@ -38,7 +38,7 @@
        }];
         return [singal map:^id(id value) {
             NSMutableArray *dicArray = value[@"books"];
-            NSMutableArray *modelArray = [Book objectArrayWithKeyValuesArray:dicArray];
+            NSMutableArray *modelArray = [Book objectArrayWithKeyValuesArray:dicArray];//?
             return modelArray;
         }];
     }];
