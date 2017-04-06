@@ -24,7 +24,7 @@
        RACSignal *singal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
            
            NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-           parameters[@"q"] = @"瘦身";
+           parameters[@"q"] = @"relax";
            [[HttpManager sharedHttpManager] sendRequestWithDic:parameters opt:OPT_GET shortURL:@"v2/book/search" setSuccessBlock:^(NSDictionary *responseDic) {
                // 请求成功调用
                // 把数据用信号传递出去
