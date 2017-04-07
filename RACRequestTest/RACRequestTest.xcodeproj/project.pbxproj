@@ -12,6 +12,8 @@
 		EC4949CA1E71268F0031C091 /* loginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4949C91E71268F0031C091 /* loginViewModel.m */; };
 		EC4A72B21E6EA2650048D95E /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4A72B11E6EA2650048D95E /* Book.m */; };
 		EC4A72B51E6EA2BA0048D95E /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4A72B41E6EA2BA0048D95E /* HttpManager.m */; };
+		EC4AE3301E95E09D00CDB83C /* loginSeccViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4AE32E1E95E09D00CDB83C /* loginSeccViewController.m */; };
+		EC4AE3311E95E09D00CDB83C /* loginSeccViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4AE32F1E95E09D00CDB83C /* loginSeccViewController.xib */; };
 		EC4B3DC11E7A800600D3CAFA /* tabTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4B3DC01E7A800600D3CAFA /* tabTestViewController.m */; };
 		EC596BEF1E6FE8D800EA0483 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC596BEE1E6FE8D800EA0483 /* LoginViewController.m */; };
 		EC73F4261E6D580E0011CC92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F4251E6D580E0011CC92 /* main.m */; };
@@ -37,6 +39,9 @@
 		EC4A72B41E6EA2BA0048D95E /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
 		EC4A72B61E6EA2D00048D95E /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		EC4A72BC1E6EA42C0048D95E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EC4AE32D1E95E09D00CDB83C /* loginSeccViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginSeccViewController.h; sourceTree = "<group>"; };
+		EC4AE32E1E95E09D00CDB83C /* loginSeccViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginSeccViewController.m; sourceTree = "<group>"; };
+		EC4AE32F1E95E09D00CDB83C /* loginSeccViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = loginSeccViewController.xib; sourceTree = "<group>"; };
 		EC4B3DBF1E7A800600D3CAFA /* tabTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabTestViewController.h; sourceTree = "<group>"; };
 		EC4B3DC01E7A800600D3CAFA /* tabTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabTestViewController.m; sourceTree = "<group>"; };
 		EC596BED1E6FE8D800EA0483 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -88,6 +93,9 @@
 		EC4A72B71E6EA2E20048D95E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EC4AE32D1E95E09D00CDB83C /* loginSeccViewController.h */,
+				EC4AE32E1E95E09D00CDB83C /* loginSeccViewController.m */,
+				EC4AE32F1E95E09D00CDB83C /* loginSeccViewController.xib */,
 				EC4B3DBF1E7A800600D3CAFA /* tabTestViewController.h */,
 				EC4B3DC01E7A800600D3CAFA /* tabTestViewController.m */,
 				EC596BED1E6FE8D800EA0483 /* LoginViewController.h */,
@@ -240,6 +248,7 @@
 			files = (
 				EC73F4341E6D580F0011CC92 /* LaunchScreen.storyboard in Resources */,
 				EC73F4311E6D580F0011CC92 /* Assets.xcassets in Resources */,
+				EC4AE3311E95E09D00CDB83C /* loginSeccViewController.xib in Resources */,
 				EC73F42F1E6D580F0011CC92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +313,7 @@
 				EC4A72B21E6EA2650048D95E /* Book.m in Sources */,
 				EC73F42C1E6D580F0011CC92 /* ViewController.m in Sources */,
 				EC73F4291E6D580F0011CC92 /* AppDelegate.m in Sources */,
+				EC4AE3301E95E09D00CDB83C /* loginSeccViewController.m in Sources */,
 				EC4A72B51E6EA2BA0048D95E /* HttpManager.m in Sources */,
 				EC4B3DC11E7A800600D3CAFA /* tabTestViewController.m in Sources */,
 				EC596BEF1E6FE8D800EA0483 /* LoginViewController.m in Sources */,

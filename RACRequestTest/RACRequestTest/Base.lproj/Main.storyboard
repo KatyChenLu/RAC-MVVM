@@ -79,7 +79,7 @@
                                 </constraints>
                                 <state key="normal" title="login"/>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UDW-pq-rfJ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text=" 手机号  用户密码6-18位数字和字母组合" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UDW-pq-rfJ">
                                 <rect key="frame" x="67" y="39" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.95437104994018307" green="0.83343685069388396" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>

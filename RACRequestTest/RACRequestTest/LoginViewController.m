@@ -26,7 +26,7 @@
  */
 #import "LoginViewController.h"
 #import "loginViewModel.h"
-
+#import "loginSeccViewController.h"
 
 @interface LoginViewController ()<UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *userNameTField;
@@ -44,6 +44,20 @@
     // Do any additional setup after loading the view.
     [self bindModel];
     self.testTextView.delegate = self;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginSecc) name:@"login" object:nil];
+}
+
+- (void)loginSecc {
+    loginSeccViewController *new = [[loginSeccViewController alloc] initWithNibName:@"loginSeccViewController" bundle:nil];
+    [new whenfinishWork:^(NSString *response, BOOL success) {
+        _testTextView.text = success?  response:nil;
+        [new haveFunWithBlock:^(NSMutableDictionary *dic, BOOL success) {
+            _testTextView.text = success?dic[@"haha"]:response;
+        }];
+        
+    }];
+    
+    [self.navigationController pushViewController:new animated:YES];
 }
 
 - (void)bindModel {

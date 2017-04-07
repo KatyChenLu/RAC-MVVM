@@ -52,6 +52,7 @@
     [_loginCommand.executionSignals.switchToLatest subscribeNext:^(id x) {
         if ([x isEqualToString:@"login seccess"]) {
             NSLog(@"登陆成功");
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"login" object:nil];
         }else if ([x isEqualToString:@"login fail"]){
             NSLog(@"登录失败");
         }
