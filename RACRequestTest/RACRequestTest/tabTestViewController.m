@@ -34,7 +34,26 @@
     
     [super viewDidLoad];
     
-    [self creatCategaryView];
+//    [self creatCategaryView];
+    
+    int x = 123;
+    
+    //曲线法:效率较高,将数字转化为字符串,将反向遍历的新字符串转化成整数
+     int count = 1,num = x;
+     while(num >=10) {
+     num /= 10;
+     count++;
+     }
+     
+    char tempStr[count],resultStr[count];
+    sprintf(tempStr,"%d",x);
+    for (int i = 0; i < count ; i++) {
+        int temp = count - i - 1;
+        resultStr[i] = tempStr[temp];
+    }
+    
+    long result = atol(resultStr);
+    
     
 }
 

@@ -39,7 +39,7 @@
     
     UINavigationController *navC1 = [[UINavigationController alloc] initWithRootViewController:oneVC];
     UINavigationController *navC2 = [[UINavigationController alloc] initWithRootViewController:twoVC];
-    UINavigationController *navC3 = [[UINavigationController alloc] initWithRootViewController:twoVC];
+    UINavigationController *navC3 = [[UINavigationController alloc] initWithRootViewController:thireVC];
     
     tabVC.viewControllers        = @[navC2, navC1,navC3];
     
