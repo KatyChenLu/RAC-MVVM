@@ -15,6 +15,7 @@
 		EC4AE3301E95E09D00CDB83C /* loginSeccViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4AE32E1E95E09D00CDB83C /* loginSeccViewController.m */; };
 		EC4AE3311E95E09D00CDB83C /* loginSeccViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4AE32F1E95E09D00CDB83C /* loginSeccViewController.xib */; };
 		EC4B3DC11E7A800600D3CAFA /* tabTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4B3DC01E7A800600D3CAFA /* tabTestViewController.m */; };
+		EC4F48911E9CAEF60011348E /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4F48901E9CAEF60011348E /* DrawViewController.m */; };
 		EC596BEF1E6FE8D800EA0483 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC596BEE1E6FE8D800EA0483 /* LoginViewController.m */; };
 		EC73F4261E6D580E0011CC92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F4251E6D580E0011CC92 /* main.m */; };
 		EC73F4291E6D580F0011CC92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F4281E6D580F0011CC92 /* AppDelegate.m */; };
@@ -44,6 +45,8 @@
 		EC4AE32F1E95E09D00CDB83C /* loginSeccViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = loginSeccViewController.xib; sourceTree = "<group>"; };
 		EC4B3DBF1E7A800600D3CAFA /* tabTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabTestViewController.h; sourceTree = "<group>"; };
 		EC4B3DC01E7A800600D3CAFA /* tabTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabTestViewController.m; sourceTree = "<group>"; };
+		EC4F488F1E9CAEF60011348E /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
+		EC4F48901E9CAEF60011348E /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
 		EC596BED1E6FE8D800EA0483 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		EC596BEE1E6FE8D800EA0483 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		EC596BF01E6FF22000EA0483 /* RACRequestTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RACRequestTest-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 				EC596BEE1E6FE8D800EA0483 /* LoginViewController.m */,
 				EC73F42A1E6D580F0011CC92 /* ViewController.h */,
 				EC73F42B1E6D580F0011CC92 /* ViewController.m */,
+				EC4F488F1E9CAEF60011348E /* DrawViewController.h */,
+				EC4F48901E9CAEF60011348E /* DrawViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4F48911E9CAEF60011348E /* DrawViewController.m in Sources */,
 				EC3C1B211E7251C50017D289 /* checkTool.m in Sources */,
 				EC4949CA1E71268F0031C091 /* loginViewModel.m in Sources */,
 				EC4A72B21E6EA2650048D95E /* Book.m in Sources */,
