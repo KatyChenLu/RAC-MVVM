@@ -45,6 +45,10 @@
     [self bindModel];
     self.testTextView.delegate = self;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginSecc) name:@"login" object:nil];
+    
+    UIButton *clearBtn = [self.userNameTField valueForKey:@"_clearButton"];
+    [clearBtn setImage:[UIImage imageNamed:@"hongtaoA"] forState:UIControlStateNormal];
+
 }
 
 - (void)loginSecc {

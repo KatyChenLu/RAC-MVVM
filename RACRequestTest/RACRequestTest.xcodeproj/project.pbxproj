@@ -25,6 +25,7 @@
 		EC73F4311E6D580F0011CC92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC73F4301E6D580F0011CC92 /* Assets.xcassets */; };
 		EC73F4341E6D580F0011CC92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC73F4321E6D580F0011CC92 /* LaunchScreen.storyboard */; };
 		EC73F43D1E6D617E0011CC92 /* RequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F43C1E6D617E0011CC92 /* RequestViewModel.m */; };
+		EC7ECEC31EA49B31003C4AA0 /* hongtaoA.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		EC73F4351E6D580F0011CC92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC73F43B1E6D617E0011CC92 /* RequestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewModel.h; sourceTree = "<group>"; };
 		EC73F43C1E6D617E0011CC92 /* RequestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestViewModel.m; sourceTree = "<group>"; };
+		EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hongtaoA.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				EC4AE32D1E95E09D00CDB83C /* loginSeccViewController.h */,
 				EC4AE32E1E95E09D00CDB83C /* loginSeccViewController.m */,
 				EC4AE32F1E95E09D00CDB83C /* loginSeccViewController.xib */,
+				EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */,
 				EC4B3DBF1E7A800600D3CAFA /* tabTestViewController.h */,
 				EC4B3DC01E7A800600D3CAFA /* tabTestViewController.m */,
 				EC596BED1E6FE8D800EA0483 /* LoginViewController.h */,
@@ -258,6 +261,7 @@
 			files = (
 				EC73F4341E6D580F0011CC92 /* LaunchScreen.storyboard in Resources */,
 				EC73F4311E6D580F0011CC92 /* Assets.xcassets in Resources */,
+				EC7ECEC31EA49B31003C4AA0 /* hongtaoA.png in Resources */,
 				EC4AE3311E95E09D00CDB83C /* loginSeccViewController.xib in Resources */,
 				EC73F42F1E6D580F0011CC92 /* Main.storyboard in Resources */,
 			);
