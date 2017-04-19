@@ -49,7 +49,7 @@
     UIButton *clearBtn = [self.userNameTField valueForKey:@"_clearButton"];
     [clearBtn setImage:[UIImage imageNamed:@"hongtaoA"] forState:UIControlStateNormal];
     clearBtn.frame = CGRectMake(50, 5, 10, 10);
-//    self.userNameTField.secureTextEntry
+    
 }
 
 - (void)loginSecc {
