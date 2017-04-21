@@ -7,5 +7,6 @@ pod ‘SDWebImage’
 pod "ESTabBarController-swift"
 pod 'ZIKConstraintsGuard'
 pod ‘MBProgressHUD’
+pod 'Masonry', '~> 1.0.2'
 use_frameworks!
 end
