@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class AccountModel;
+
 @interface loginViewModel : NSObject
 
 @property (nonatomic, strong) AccountModel *account;
