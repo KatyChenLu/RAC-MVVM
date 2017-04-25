@@ -56,6 +56,7 @@
         }else if ([x isEqualToString:@"login fail"]){
             NSLog(@"登录失败");
         }
+        
     }];
     //不懂为什么要用skip忽略一次
     [[_loginCommand.executing skip:1] subscribeNext:^(id x) {
