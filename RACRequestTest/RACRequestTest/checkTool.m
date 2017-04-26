@@ -18,7 +18,6 @@
     return isMatch;
 }
 
-
 #pragma 正则匹配用户密码6-18位数字和字母组合
 + (BOOL)checkPassword:(NSString *) password
 {
