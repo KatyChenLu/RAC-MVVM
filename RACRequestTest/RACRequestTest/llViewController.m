@@ -21,9 +21,6 @@
     [super viewDidLoad];
 }
 
-//first
-//3333
-
 #pragma mark - UITableViewDelegate
 
 #pragma mark - Public
