@@ -1,0 +1,18 @@
+//
+//  DebugConfig.xcconfig
+//  RACRequestTest
+//
+//  Created by ChenLu on 2017/5/8.
+//  Copyright © 2017年 Chenlu. All rights reserved.
+//
+/*
+导入公共 config
+*/
+#include "CommonConfig.xcconfig"
+/*
+导入pods 对应的 config
+*/
+#include "Pods/Target Support Files/Pods/Pods.debug.xcconfig"
+
+APP_DISPLAY_NAME = 测试服
+CONFIG_FLAG = DEBUG

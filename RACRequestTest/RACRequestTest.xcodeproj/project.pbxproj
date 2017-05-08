@@ -67,6 +67,10 @@
 		EC73F43B1E6D617E0011CC92 /* RequestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewModel.h; sourceTree = "<group>"; };
 		EC73F43C1E6D617E0011CC92 /* RequestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestViewModel.m; sourceTree = "<group>"; };
 		EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hongtaoA.png; sourceTree = "<group>"; };
+		ECA393BE1EC01B3F00A215FC /* CommonConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CommonConfig.xcconfig; sourceTree = "<group>"; };
+		ECA393BF1EC01B4E00A215FC /* DebugConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugConfig.xcconfig; sourceTree = "<group>"; };
+		ECA393C01EC01B5A00A215FC /* ReleaseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseConfig.xcconfig; sourceTree = "<group>"; };
+		ECA393C11EC01B6900A215FC /* ReleaseTestConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseTestConfig.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 		EC73F4231E6D580E0011CC92 /* RACRequestTest */ = {
 			isa = PBXGroup;
 			children = (
+				ECA393BD1EC01B2D00A215FC /* Configs */,
 				EC73F4271E6D580F0011CC92 /* AppDelegate.h */,
 				EC73F4281E6D580F0011CC92 /* AppDelegate.m */,
 				EC4A72BC1E6EA42C0048D95E /* PrefixHeader.pch */,
@@ -195,6 +200,17 @@
 				EC73F4251E6D580E0011CC92 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECA393BD1EC01B2D00A215FC /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				ECA393BE1EC01B3F00A215FC /* CommonConfig.xcconfig */,
+				ECA393BF1EC01B4E00A215FC /* DebugConfig.xcconfig */,
+				ECA393C01EC01B5A00A215FC /* ReleaseConfig.xcconfig */,
+				ECA393C11EC01B6900A215FC /* ReleaseTestConfig.xcconfig */,
+			);
+			name = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,6 +499,71 @@
 			};
 			name = Release;
 		};
+		ECA393BA1EC01A0000A215FC /* Release Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Test";
+		};
+		ECA393BB1EC01A0000A215FC /* Release Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A651D8DE89459553DAD06968 /* Pods-RACRequestTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RACRequestTest/PrefixHeader.pch";
+				INFOPLIST_FILE = RACRequestTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lulu.Chen.RACRequestTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RACRequestTest/RACRequestTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Release Test";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -490,6 +571,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC73F4361E6D580F0011CC92 /* Debug */,
+				ECA393BA1EC01A0000A215FC /* Release Test */,
 				EC73F4371E6D580F0011CC92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -499,6 +581,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC73F4391E6D580F0011CC92 /* Debug */,
+				ECA393BB1EC01A0000A215FC /* Release Test */,
 				EC73F43A1E6D580F0011CC92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
