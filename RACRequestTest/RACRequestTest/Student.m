@@ -7,7 +7,25 @@
 //
 
 #import "Student.h"
-
+#import "Teacher.h"
 @implementation Student
+
+- (id)forwardingTargetForSelector:(SEL)aSelector {
+    Teacher *teacher = [[Teacher alloc] init];
+    if ([teacher respondsToSelector:aSelector]) {
+        return teacher;
+    }
+    
+    
+    return nil;
+}
+
+//- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+//    NSMethodSignature *signature = [super methodSignatureForSelector:aSelector];
+//    if (signature == nil) {
+//        signature = []
+//    }
+//}
+
 
 @end

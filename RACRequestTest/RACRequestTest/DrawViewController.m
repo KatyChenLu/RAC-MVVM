@@ -7,6 +7,8 @@
 //
 
 #import "DrawViewController.h"
+#import "Student+teach.h"
+#import "Teacher.h"
 
 @interface DrawViewController ()
 
@@ -17,6 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    Student *xiaoming = [[Student alloc] init];
+    xiaoming.name = @"xiaoming";
+    NSLog(@"%@",xiaoming.name);
+//    [xiaoming teachSomeboy];
+//    
+//    Teacher *tea = [[Teacher alloc] init];
+//    [tea createLinkList];
+//    [tea outputLinkList];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

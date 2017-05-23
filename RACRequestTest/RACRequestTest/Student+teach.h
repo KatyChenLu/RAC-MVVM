@@ -10,4 +10,7 @@
 
 @interface Student (teach)
 
+//不会生成添加属性的getter和setter方法，必须我们手动生成
+@property (nonatomic, copy) NSString * name;
+
 @end

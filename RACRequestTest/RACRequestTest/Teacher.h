@@ -10,4 +10,8 @@
 
 @interface Teacher : NSObject
 
+- (void)teachSomeboy;
+//- (void)createLinkList;
+//- (void)outputLinkList ;
+//- (void)resetLinkList:(Teacher *)link;
 @end

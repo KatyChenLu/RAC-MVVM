@@ -26,6 +26,9 @@
 		EC73F4341E6D580F0011CC92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC73F4321E6D580F0011CC92 /* LaunchScreen.storyboard */; };
 		EC73F43D1E6D617E0011CC92 /* RequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F43C1E6D617E0011CC92 /* RequestViewModel.m */; };
 		EC7ECEC31EA49B31003C4AA0 /* hongtaoA.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */; };
+		EC91E1AC1ED29A6E008B99DB /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1AB1ED29A6E008B99DB /* Teacher.m */; };
+		EC91E1B01ED29AD9008B99DB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1AF1ED29AD9008B99DB /* Student.m */; };
+		EC91E1B31ED29C21008B99DB /* Student+teach.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1B21ED29C21008B99DB /* Student+teach.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +70,12 @@
 		EC73F43B1E6D617E0011CC92 /* RequestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewModel.h; sourceTree = "<group>"; };
 		EC73F43C1E6D617E0011CC92 /* RequestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestViewModel.m; sourceTree = "<group>"; };
 		EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hongtaoA.png; sourceTree = "<group>"; };
+		EC91E1AA1ED29A6E008B99DB /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		EC91E1AB1ED29A6E008B99DB /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		EC91E1AE1ED29AD9008B99DB /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		EC91E1AF1ED29AD9008B99DB /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		EC91E1B11ED29C21008B99DB /* Student+teach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+teach.h"; sourceTree = "<group>"; };
+		EC91E1B21ED29C21008B99DB /* Student+teach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+teach.m"; sourceTree = "<group>"; };
 		ECA393BE1EC01B3F00A215FC /* CommonConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CommonConfig.xcconfig; sourceTree = "<group>"; };
 		ECA393BF1EC01B4E00A215FC /* DebugConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugConfig.xcconfig; sourceTree = "<group>"; };
 		ECA393C01EC01B5A00A215FC /* ReleaseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseConfig.xcconfig; sourceTree = "<group>"; };
@@ -115,8 +124,6 @@
 				EC596BEE1E6FE8D800EA0483 /* LoginViewController.m */,
 				EC73F42A1E6D580F0011CC92 /* ViewController.h */,
 				EC73F42B1E6D580F0011CC92 /* ViewController.m */,
-				EC4F488F1E9CAEF60011348E /* DrawViewController.h */,
-				EC4F48901E9CAEF60011348E /* DrawViewController.m */,
 				EC6A41F51E9F22F900670EB5 /* llViewController.h */,
 				EC6A41F61E9F22F900670EB5 /* llViewController.m */,
 			);
@@ -176,6 +183,7 @@
 		EC73F4231E6D580E0011CC92 /* RACRequestTest */ = {
 			isa = PBXGroup;
 			children = (
+				EC91E1AD1ED29A7C008B99DB /* selector */,
 				ECA393BD1EC01B2D00A215FC /* Configs */,
 				EC73F4271E6D580F0011CC92 /* AppDelegate.h */,
 				EC73F4281E6D580F0011CC92 /* AppDelegate.m */,
@@ -200,6 +208,21 @@
 				EC73F4251E6D580E0011CC92 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC91E1AD1ED29A7C008B99DB /* selector */ = {
+			isa = PBXGroup;
+			children = (
+				EC91E1AA1ED29A6E008B99DB /* Teacher.h */,
+				EC91E1AB1ED29A6E008B99DB /* Teacher.m */,
+				EC91E1AE1ED29AD9008B99DB /* Student.h */,
+				EC91E1AF1ED29AD9008B99DB /* Student.m */,
+				EC91E1B11ED29C21008B99DB /* Student+teach.h */,
+				EC91E1B21ED29C21008B99DB /* Student+teach.m */,
+				EC4F488F1E9CAEF60011348E /* DrawViewController.h */,
+				EC4F48901E9CAEF60011348E /* DrawViewController.m */,
+			);
+			name = selector;
 			sourceTree = "<group>";
 		};
 		ECA393BD1EC01B2D00A215FC /* Configs */ = {
@@ -339,13 +362,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4F48911E9CAEF60011348E /* DrawViewController.m in Sources */,
+				EC91E1B31ED29C21008B99DB /* Student+teach.m in Sources */,
 				EC3C1B211E7251C50017D289 /* checkTool.m in Sources */,
+				EC91E1B01ED29AD9008B99DB /* Student.m in Sources */,
 				EC4949CA1E71268F0031C091 /* loginViewModel.m in Sources */,
 				EC4A72B21E6EA2650048D95E /* Book.m in Sources */,
 				EC73F42C1E6D580F0011CC92 /* ViewController.m in Sources */,
 				EC73F4291E6D580F0011CC92 /* AppDelegate.m in Sources */,
 				EC4AE3301E95E09D00CDB83C /* loginSeccViewController.m in Sources */,
 				EC4A72B51E6EA2BA0048D95E /* HttpManager.m in Sources */,
+				EC91E1AC1ED29A6E008B99DB /* Teacher.m in Sources */,
 				EC4B3DC11E7A800600D3CAFA /* tabTestViewController.m in Sources */,
 				EC6A41F71E9F22F900670EB5 /* llViewController.m in Sources */,
 				EC596BEF1E6FE8D800EA0483 /* LoginViewController.m in Sources */,
