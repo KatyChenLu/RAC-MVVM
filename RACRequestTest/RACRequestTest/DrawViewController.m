@@ -9,6 +9,13 @@
 #import "DrawViewController.h"
 #import "Student+teach.h"
 #import "Teacher.h"
+typedef struct ListNode *list_pointer;
+typedef struct ListNode
+{
+    int value;
+    list_pointer link;
+}ListNode;
+list_pointer pHead;
 
 @interface DrawViewController ()
 
@@ -20,9 +27,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    Student *xiaoming = [[Student alloc] init];
-    xiaoming.name = @"xiaoming";
-    NSLog(@"%@",xiaoming.name);
+//    Student *xiaoming = [[Student alloc] init];
+//    xiaoming.name = @"xiaoming";
+//    NSLog(@"%@",xiaoming.name);
+    
 //    [xiaoming teachSomeboy];
 //    
 //    Teacher *tea = [[Teacher alloc] init];
@@ -30,7 +38,34 @@
 //    [tea outputLinkList];
     
     
+    
 }
+
+//pHead是指向指针的指针  ListNode** p
+void addToTail(list_pointer *pHead, int value){
+    
+    list_pointer node = (list_pointer)malloc(sizeof(ListNode));
+    if (node == NULL)
+    {
+        fprintf(stderr, "Faile\n");
+        exit(1);
+    }
+    node->value = value;
+    node->link = NULL;
+    
+    if (*pHead == NULL)
+    {
+        *pHead = node;
+    }
+    else{
+        list_pointer p = *pHead;
+        while (p->link != NULL){
+            p = p->link;
+        }
+        p->link = node;
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

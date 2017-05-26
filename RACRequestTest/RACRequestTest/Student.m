@@ -20,6 +20,17 @@
     return nil;
 }
 
+
++(Student *)shareStudent {
+    static Student *stu = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        stu = [[Student alloc] init];
+    });
+    return stu;
+
+}
+
 //- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
 //    NSMethodSignature *signature = [super methodSignatureForSelector:aSelector];
 //    if (signature == nil) {

@@ -9,4 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface Student : NSObject
++(Student *)shareStudent;
 @end
