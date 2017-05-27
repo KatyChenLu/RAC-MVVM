@@ -9,6 +9,7 @@
 #import "DrawViewController.h"
 #import "Student+teach.h"
 #import "Teacher.h"
+#import <WebKit/WebKit.h>
 typedef struct ListNode *list_pointer;
 typedef struct ListNode
 {
@@ -38,33 +39,41 @@ list_pointer pHead;
 //    [tea outputLinkList];
     
     
+     *wenview = [[UIWebView alloc] init];
+    wenview.frame = self.view.frame;
+    
+    wenview.backgroundColor = [UIColor redColor];
+    wenview.
+    
+    [self.view addSubview:wenview];
+    
     
 }
 
-//pHead是指向指针的指针  ListNode** p
-void addToTail(list_pointer *pHead, int value){
-    
-    list_pointer node = (list_pointer)malloc(sizeof(ListNode));
-    if (node == NULL)
-    {
-        fprintf(stderr, "Faile\n");
-        exit(1);
-    }
-    node->value = value;
-    node->link = NULL;
-    
-    if (*pHead == NULL)
-    {
-        *pHead = node;
-    }
-    else{
-        list_pointer p = *pHead;
-        while (p->link != NULL){
-            p = p->link;
-        }
-        p->link = node;
-    }
-}
+////pHead是指向指针的指针  ListNode** p
+//void addToTail(list_pointer *pHead, int value){
+//    
+//    list_pointer node = (list_pointer)malloc(sizeof(ListNode));
+//    if (node == NULL)
+//    {
+//        fprintf(stderr, "Faile\n");
+//        exit(1);
+//    }
+//    node->value = value;
+//    node->link = NULL;
+//    
+//    if (*pHead == NULL)
+//    {
+//        *pHead = node;
+//    }
+//    else{
+//        list_pointer p = *pHead;
+//        while (p->link != NULL){
+//            p = p->link;
+//        }
+//        p->link = node;
+//    }
+//}
 
 
 - (void)didReceiveMemoryWarning {
