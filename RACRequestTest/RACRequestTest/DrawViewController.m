@@ -9,7 +9,6 @@
 #import "DrawViewController.h"
 #import "Student+teach.h"
 #import "Teacher.h"
-#import <WebKit/WebKit.h>
 typedef struct ListNode *list_pointer;
 typedef struct ListNode
 {
@@ -39,14 +38,26 @@ list_pointer pHead;
 //    [tea outputLinkList];
     
     
-     *wenview = [[UIWebView alloc] init];
+    UIWebView *wenview = [[UIWebView alloc] init];
     wenview.frame = self.view.frame;
     
     wenview.backgroundColor = [UIColor redColor];
-    wenview.
+    
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://m.gomaster.cn/index.php?c=nmcourse&a=app_detail&course_id=4267"]];
+    [wenview loadRequest:request];
     
     [self.view addSubview:wenview];
     
+    
+    // 单击的 Recognizer
+    UITapGestureRecognizer* singleRecognizer;
+    singleRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showWebImage:)];
+    singleRecognizer.numberOfTapsRequired = 1; // 单击
+    [wenview addGestureRecognizer:singleRecognizer];
+    
+}
+- (void)showWebImage:(UIGestureRecognizer *)tap {
     
 }
 

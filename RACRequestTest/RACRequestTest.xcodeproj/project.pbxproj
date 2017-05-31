@@ -29,6 +29,9 @@
 		EC91E1AC1ED29A6E008B99DB /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1AB1ED29A6E008B99DB /* Teacher.m */; };
 		EC91E1B01ED29AD9008B99DB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1AF1ED29AD9008B99DB /* Student.m */; };
 		EC91E1B31ED29C21008B99DB /* Student+teach.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1B21ED29C21008B99DB /* Student+teach.m */; };
+		EC930F3B1ED971D10042B6B0 /* UIImageView+MyWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EC930F3A1ED971D10042B6B0 /* UIImageView+MyWebCache.m */; };
+		EC930F3D1ED972F60042B6B0 /* iOS.png in Resources */ = {isa = PBXBuildFile; fileRef = EC930F3C1ED972F60042B6B0 /* iOS.png */; };
+		EC930F401ED973250042B6B0 /* UIImageView+OtherWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EC930F3F1ED973250042B6B0 /* UIImageView+OtherWebCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,11 @@
 		EC91E1AF1ED29AD9008B99DB /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		EC91E1B11ED29C21008B99DB /* Student+teach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+teach.h"; sourceTree = "<group>"; };
 		EC91E1B21ED29C21008B99DB /* Student+teach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+teach.m"; sourceTree = "<group>"; };
+		EC930F391ED971D10042B6B0 /* UIImageView+MyWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MyWebCache.h"; sourceTree = "<group>"; };
+		EC930F3A1ED971D10042B6B0 /* UIImageView+MyWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MyWebCache.m"; sourceTree = "<group>"; };
+		EC930F3C1ED972F60042B6B0 /* iOS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS.png; sourceTree = "<group>"; };
+		EC930F3E1ED973250042B6B0 /* UIImageView+OtherWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+OtherWebCache.h"; sourceTree = "<group>"; };
+		EC930F3F1ED973250042B6B0 /* UIImageView+OtherWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+OtherWebCache.m"; sourceTree = "<group>"; };
 		ECA393BE1EC01B3F00A215FC /* CommonConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CommonConfig.xcconfig; sourceTree = "<group>"; };
 		ECA393BF1EC01B4E00A215FC /* DebugConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugConfig.xcconfig; sourceTree = "<group>"; };
 		ECA393C01EC01B5A00A215FC /* ReleaseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseConfig.xcconfig; sourceTree = "<group>"; };
@@ -117,7 +125,6 @@
 				EC4AE32D1E95E09D00CDB83C /* loginSeccViewController.h */,
 				EC4AE32E1E95E09D00CDB83C /* loginSeccViewController.m */,
 				EC4AE32F1E95E09D00CDB83C /* loginSeccViewController.xib */,
-				EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */,
 				EC4B3DBF1E7A800600D3CAFA /* tabTestViewController.h */,
 				EC4B3DC01E7A800600D3CAFA /* tabTestViewController.m */,
 				EC596BED1E6FE8D800EA0483 /* LoginViewController.h */,
@@ -158,6 +165,8 @@
 				EC4A72B61E6EA2D00048D95E /* Singleton.h */,
 				EC3C1B1F1E7251C50017D289 /* checkTool.h */,
 				EC3C1B201E7251C50017D289 /* checkTool.m */,
+				EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */,
+				EC930F3C1ED972F60042B6B0 /* iOS.png */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -183,6 +192,7 @@
 		EC73F4231E6D580E0011CC92 /* RACRequestTest */ = {
 			isa = PBXGroup;
 			children = (
+				EC930F381ED971740042B6B0 /* Category */,
 				EC91E1AD1ED29A7C008B99DB /* selector */,
 				ECA393BD1EC01B2D00A215FC /* Configs */,
 				EC73F4271E6D580F0011CC92 /* AppDelegate.h */,
@@ -223,6 +233,17 @@
 				EC4F48901E9CAEF60011348E /* DrawViewController.m */,
 			);
 			name = selector;
+			sourceTree = "<group>";
+		};
+		EC930F381ED971740042B6B0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EC930F391ED971D10042B6B0 /* UIImageView+MyWebCache.h */,
+				EC930F3A1ED971D10042B6B0 /* UIImageView+MyWebCache.m */,
+				EC930F3E1ED973250042B6B0 /* UIImageView+OtherWebCache.h */,
+				EC930F3F1ED973250042B6B0 /* UIImageView+OtherWebCache.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 		ECA393BD1EC01B2D00A215FC /* Configs */ = {
@@ -301,6 +322,7 @@
 				EC73F4341E6D580F0011CC92 /* LaunchScreen.storyboard in Resources */,
 				EC73F4311E6D580F0011CC92 /* Assets.xcassets in Resources */,
 				EC7ECEC31EA49B31003C4AA0 /* hongtaoA.png in Resources */,
+				EC930F3D1ED972F60042B6B0 /* iOS.png in Resources */,
 				EC4AE3311E95E09D00CDB83C /* loginSeccViewController.xib in Resources */,
 				EC73F42F1E6D580F0011CC92 /* Main.storyboard in Resources */,
 			);
@@ -361,6 +383,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC930F401ED973250042B6B0 /* UIImageView+OtherWebCache.m in Sources */,
+				EC930F3B1ED971D10042B6B0 /* UIImageView+MyWebCache.m in Sources */,
 				EC4F48911E9CAEF60011348E /* DrawViewController.m in Sources */,
 				EC91E1B31ED29C21008B99DB /* Student+teach.m in Sources */,
 				EC3C1B211E7251C50017D289 /* checkTool.m in Sources */,
