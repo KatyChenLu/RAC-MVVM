@@ -25,6 +25,8 @@
 		EC73F4311E6D580F0011CC92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC73F4301E6D580F0011CC92 /* Assets.xcassets */; };
 		EC73F4341E6D580F0011CC92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC73F4321E6D580F0011CC92 /* LaunchScreen.storyboard */; };
 		EC73F43D1E6D617E0011CC92 /* RequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F43C1E6D617E0011CC92 /* RequestViewModel.m */; };
+		EC77C46A1EDEA39700181308 /* father.m in Sources */ = {isa = PBXBuildFile; fileRef = EC77C4691EDEA39700181308 /* father.m */; };
+		EC77C46D1EDEA3C000181308 /* son.m in Sources */ = {isa = PBXBuildFile; fileRef = EC77C46C1EDEA3C000181308 /* son.m */; };
 		EC7ECEC31EA49B31003C4AA0 /* hongtaoA.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */; };
 		EC91E1AC1ED29A6E008B99DB /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1AB1ED29A6E008B99DB /* Teacher.m */; };
 		EC91E1B01ED29AD9008B99DB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1AF1ED29AD9008B99DB /* Student.m */; };
@@ -72,6 +74,10 @@
 		EC73F4351E6D580F0011CC92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC73F43B1E6D617E0011CC92 /* RequestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewModel.h; sourceTree = "<group>"; };
 		EC73F43C1E6D617E0011CC92 /* RequestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestViewModel.m; sourceTree = "<group>"; };
+		EC77C4681EDEA39700181308 /* father.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = father.h; sourceTree = "<group>"; };
+		EC77C4691EDEA39700181308 /* father.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = father.m; sourceTree = "<group>"; };
+		EC77C46B1EDEA3C000181308 /* son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = son.h; sourceTree = "<group>"; };
+		EC77C46C1EDEA3C000181308 /* son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = son.m; sourceTree = "<group>"; };
 		EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hongtaoA.png; sourceTree = "<group>"; };
 		EC91E1AA1ED29A6E008B99DB /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		EC91E1AB1ED29A6E008B99DB /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
@@ -192,6 +198,7 @@
 		EC73F4231E6D580E0011CC92 /* RACRequestTest */ = {
 			isa = PBXGroup;
 			children = (
+				EC77C4641EDEA32800181308 /* jicheng */,
 				EC930F381ED971740042B6B0 /* Category */,
 				EC91E1AD1ED29A7C008B99DB /* selector */,
 				ECA393BD1EC01B2D00A215FC /* Configs */,
@@ -218,6 +225,17 @@
 				EC73F4251E6D580E0011CC92 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC77C4641EDEA32800181308 /* jicheng */ = {
+			isa = PBXGroup;
+			children = (
+				EC77C4681EDEA39700181308 /* father.h */,
+				EC77C4691EDEA39700181308 /* father.m */,
+				EC77C46B1EDEA3C000181308 /* son.h */,
+				EC77C46C1EDEA3C000181308 /* son.m */,
+			);
+			name = jicheng;
 			sourceTree = "<group>";
 		};
 		EC91E1AD1ED29A7C008B99DB /* selector */ = {
@@ -394,6 +412,8 @@
 				EC73F42C1E6D580F0011CC92 /* ViewController.m in Sources */,
 				EC73F4291E6D580F0011CC92 /* AppDelegate.m in Sources */,
 				EC4AE3301E95E09D00CDB83C /* loginSeccViewController.m in Sources */,
+				EC77C46A1EDEA39700181308 /* father.m in Sources */,
+				EC77C46D1EDEA3C000181308 /* son.m in Sources */,
 				EC4A72B51E6EA2BA0048D95E /* HttpManager.m in Sources */,
 				EC91E1AC1ED29A6E008B99DB /* Teacher.m in Sources */,
 				EC4B3DC11E7A800600D3CAFA /* tabTestViewController.m in Sources */,
