@@ -1,0 +1,6 @@
+framework module ESPictureBrowser {
+  umbrella header "ESPictureBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}

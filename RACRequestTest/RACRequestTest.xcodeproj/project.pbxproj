@@ -40,6 +40,7 @@
 		652500476208F415FB35C108 /* Pods-RACRequestTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACRequestTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACRequestTest/Pods-RACRequestTest.release.xcconfig"; sourceTree = "<group>"; };
 		A2F9246DB5431863C29418CB /* Pods_RACRequestTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACRequestTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A651D8DE89459553DAD06968 /* Pods-RACRequestTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACRequestTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACRequestTest/Pods-RACRequestTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C95DD38F00F68A665BF52F9D /* Pods-RACRequestTest.release test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACRequestTest.release test.xcconfig"; path = "Pods/Target Support Files/Pods-RACRequestTest/Pods-RACRequestTest.release test.xcconfig"; sourceTree = "<group>"; };
 		EC3C1B1F1E7251C50017D289 /* checkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkTool.h; sourceTree = "<group>"; };
 		EC3C1B201E7251C50017D289 /* checkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = checkTool.m; sourceTree = "<group>"; };
 		EC4949C81E71268F0031C091 /* loginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewModel.h; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 			children = (
 				A651D8DE89459553DAD06968 /* Pods-RACRequestTest.debug.xcconfig */,
 				652500476208F415FB35C108 /* Pods-RACRequestTest.release.xcconfig */,
+				C95DD38F00F68A665BF52F9D /* Pods-RACRequestTest.release test.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -619,7 +621,7 @@
 		};
 		ECA393BB1EC01A0000A215FC /* Release Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A651D8DE89459553DAD06968 /* Pods-RACRequestTest.debug.xcconfig */;
+			baseConfigurationReference = C95DD38F00F68A665BF52F9D /* Pods-RACRequestTest.release test.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

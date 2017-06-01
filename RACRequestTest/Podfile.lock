@@ -14,6 +14,8 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - ESPictureBrowser (0.4.4):
+    - YYWebImage (~> 1.0.5)
   - ESTabBarController-swift (2.3)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
@@ -27,10 +29,18 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
   - ZIKConstraintsGuard (1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - ESPictureBrowser
   - ESTabBarController-swift
   - Masonry (~> 1.0.2)
   - MBProgressHUD
@@ -41,14 +51,18 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  ESPictureBrowser: 2e9bb9dd2fc3c26a42d535e06df49981c5a8a2e2
   ESTabBarController-swift: 23011ffbee6cd66a37309f00c7c21c9dd63c17de
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e
   ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
   ZIKConstraintsGuard: 4231657a3a2da15a7748a1911982c537b8099404
 
-PODFILE CHECKSUM: 7cd2a367a6c84f589bd913e877255dded1d4e658
+PODFILE CHECKSUM: 7791a89f2e8c5842a44d7374b8ea9891c53461e7
 
 COCOAPODS: 1.2.0
