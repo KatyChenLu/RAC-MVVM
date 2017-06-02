@@ -18,6 +18,8 @@
 		EC4F48911E9CAEF60011348E /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4F48901E9CAEF60011348E /* DrawViewController.m */; };
 		EC596BEF1E6FE8D800EA0483 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC596BEE1E6FE8D800EA0483 /* LoginViewController.m */; };
 		EC6A41F71E9F22F900670EB5 /* llViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A41F61E9F22F900670EB5 /* llViewController.m */; };
+		EC6D99631EE155150096BB34 /* dsf.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6D99621EE155150096BB34 /* dsf.m */; };
+		EC6D99661EE155440096BB34 /* CLLLLLLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6D99651EE155440096BB34 /* CLLLLLLViewController.m */; };
 		EC73F4261E6D580E0011CC92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F4251E6D580E0011CC92 /* main.m */; };
 		EC73F4291E6D580F0011CC92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F4281E6D580F0011CC92 /* AppDelegate.m */; };
 		EC73F42C1E6D580F0011CC92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F42B1E6D580F0011CC92 /* ViewController.m */; };
@@ -63,6 +65,10 @@
 		EC596BF01E6FF22000EA0483 /* RACRequestTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RACRequestTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		EC6A41F51E9F22F900670EB5 /* llViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = llViewController.h; sourceTree = "<group>"; };
 		EC6A41F61E9F22F900670EB5 /* llViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = llViewController.m; sourceTree = "<group>"; };
+		EC6D99611EE155150096BB34 /* dsf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsf.h; sourceTree = "<group>"; };
+		EC6D99621EE155150096BB34 /* dsf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dsf.m; sourceTree = "<group>"; };
+		EC6D99641EE155440096BB34 /* CLLLLLLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLLLLLViewController.h; sourceTree = "<group>"; };
+		EC6D99651EE155440096BB34 /* CLLLLLLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLLLLLViewController.m; sourceTree = "<group>"; };
 		EC73F4211E6D580E0011CC92 /* RACRequestTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACRequestTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC73F4251E6D580E0011CC92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC73F4271E6D580F0011CC92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -206,6 +212,10 @@
 				ECA393BD1EC01B2D00A215FC /* Configs */,
 				EC73F4271E6D580F0011CC92 /* AppDelegate.h */,
 				EC73F4281E6D580F0011CC92 /* AppDelegate.m */,
+				EC6D99611EE155150096BB34 /* dsf.h */,
+				EC6D99621EE155150096BB34 /* dsf.m */,
+				EC6D99641EE155440096BB34 /* CLLLLLLViewController.h */,
+				EC6D99651EE155440096BB34 /* CLLLLLLViewController.m */,
 				EC4A72BC1E6EA42C0048D95E /* PrefixHeader.pch */,
 				EC4A72BA1E6EA31B0048D95E /* Other */,
 				EC4A72B91E6EA3160048D95E /* Model */,
@@ -407,6 +417,7 @@
 				EC930F3B1ED971D10042B6B0 /* UIImageView+MyWebCache.m in Sources */,
 				EC4F48911E9CAEF60011348E /* DrawViewController.m in Sources */,
 				EC91E1B31ED29C21008B99DB /* Student+teach.m in Sources */,
+				EC6D99661EE155440096BB34 /* CLLLLLLViewController.m in Sources */,
 				EC3C1B211E7251C50017D289 /* checkTool.m in Sources */,
 				EC91E1B01ED29AD9008B99DB /* Student.m in Sources */,
 				EC4949CA1E71268F0031C091 /* loginViewModel.m in Sources */,
@@ -421,6 +432,7 @@
 				EC4B3DC11E7A800600D3CAFA /* tabTestViewController.m in Sources */,
 				EC6A41F71E9F22F900670EB5 /* llViewController.m in Sources */,
 				EC596BEF1E6FE8D800EA0483 /* LoginViewController.m in Sources */,
+				EC6D99631EE155150096BB34 /* dsf.m in Sources */,
 				EC73F43D1E6D617E0011CC92 /* RequestViewModel.m in Sources */,
 				EC73F4261E6D580E0011CC92 /* main.m in Sources */,
 			);
