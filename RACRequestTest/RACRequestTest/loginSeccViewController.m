@@ -30,7 +30,6 @@
 }
 
 - (void)haveFunWithBlock:(void(^)(NSMutableDictionary * dic,BOOL success))funBlock{
-    
     NSLog(@"在网络正常的情况下,通过运算后 我们得出了一个值是100 现在 要到用这个值的地方go");
     NSMutableDictionary * dic =[NSMutableDictionary dictionary];
     [dic setObject:@"100" forKey:@"haha"];
