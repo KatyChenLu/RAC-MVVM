@@ -22,6 +22,7 @@
    [[_btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
        [self.navigationController popViewControllerAnimated:YES];
    }];
+    
 }
 
 - (void)whenfinishWork:(responseBlock)response {
