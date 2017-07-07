@@ -55,7 +55,7 @@
 - (void)loginSecc {
     loginSeccViewController *new = [[loginSeccViewController alloc] initWithNibName:@"loginSeccViewController" bundle:nil];
     [new whenfinishWork:^(NSString *response, BOOL success) {
-        _testTextView.text = success?  response:nil;
+        _testTextView.text = success? response:nil;
         [new haveFunWithBlock:^(NSMutableDictionary *dic, BOOL success) {
             _testTextView.text = success?dic[@"haha"]:response;
         }];
