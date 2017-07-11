@@ -36,7 +36,7 @@
 //    
 //    btn.layer.mask = maskLayer;
     
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:btn];
     
