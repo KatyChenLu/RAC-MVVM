@@ -30,12 +30,14 @@
 		EC77C46A1EDEA39700181308 /* father.m in Sources */ = {isa = PBXBuildFile; fileRef = EC77C4691EDEA39700181308 /* father.m */; };
 		EC77C46D1EDEA3C000181308 /* son.m in Sources */ = {isa = PBXBuildFile; fileRef = EC77C46C1EDEA3C000181308 /* son.m */; };
 		EC7ECEC31EA49B31003C4AA0 /* hongtaoA.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */; };
+		EC87A2041F14B54300C0FF93 /* nav_shanchu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC87A2031F14B54300C0FF93 /* nav_shanchu@2x.png */; };
+		EC87A2071F14BC2700C0FF93 /* CLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EC87A2061F14BC2700C0FF93 /* CLButton.m */; };
+		EC87A20C1F14C3AD00C0FF93 /* UIImageView+MyWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EC87A2091F14C3AD00C0FF93 /* UIImageView+MyWebCache.m */; };
+		EC87A20D1F14C3AD00C0FF93 /* UIImageView+OtherWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EC87A20B1F14C3AD00C0FF93 /* UIImageView+OtherWebCache.m */; };
+		EC87A2101F14D2C300C0FF93 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC87A20F1F14D2C300C0FF93 /* MyView.m */; };
 		EC91E1AC1ED29A6E008B99DB /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1AB1ED29A6E008B99DB /* Teacher.m */; };
 		EC91E1B01ED29AD9008B99DB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1AF1ED29AD9008B99DB /* Student.m */; };
-		EC91E1B31ED29C21008B99DB /* Student+teach.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1B21ED29C21008B99DB /* Student+teach.m */; };
-		EC930F3B1ED971D10042B6B0 /* UIImageView+MyWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EC930F3A1ED971D10042B6B0 /* UIImageView+MyWebCache.m */; };
 		EC930F3D1ED972F60042B6B0 /* iOS.png in Resources */ = {isa = PBXBuildFile; fileRef = EC930F3C1ED972F60042B6B0 /* iOS.png */; };
-		EC930F401ED973250042B6B0 /* UIImageView+OtherWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EC930F3F1ED973250042B6B0 /* UIImageView+OtherWebCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,17 +88,20 @@
 		EC77C46B1EDEA3C000181308 /* son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = son.h; sourceTree = "<group>"; };
 		EC77C46C1EDEA3C000181308 /* son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = son.m; sourceTree = "<group>"; };
 		EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hongtaoA.png; sourceTree = "<group>"; };
+		EC87A2031F14B54300C0FF93 /* nav_shanchu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_shanchu@2x.png"; sourceTree = "<group>"; };
+		EC87A2051F14BC2700C0FF93 /* CLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLButton.h; sourceTree = "<group>"; };
+		EC87A2061F14BC2700C0FF93 /* CLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLButton.m; sourceTree = "<group>"; };
+		EC87A2081F14C3AD00C0FF93 /* UIImageView+MyWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MyWebCache.h"; sourceTree = "<group>"; };
+		EC87A2091F14C3AD00C0FF93 /* UIImageView+MyWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MyWebCache.m"; sourceTree = "<group>"; };
+		EC87A20A1F14C3AD00C0FF93 /* UIImageView+OtherWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+OtherWebCache.h"; sourceTree = "<group>"; };
+		EC87A20B1F14C3AD00C0FF93 /* UIImageView+OtherWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+OtherWebCache.m"; sourceTree = "<group>"; };
+		EC87A20E1F14D2C300C0FF93 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		EC87A20F1F14D2C300C0FF93 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		EC91E1AA1ED29A6E008B99DB /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		EC91E1AB1ED29A6E008B99DB /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 		EC91E1AE1ED29AD9008B99DB /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		EC91E1AF1ED29AD9008B99DB /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
-		EC91E1B11ED29C21008B99DB /* Student+teach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+teach.h"; sourceTree = "<group>"; };
-		EC91E1B21ED29C21008B99DB /* Student+teach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+teach.m"; sourceTree = "<group>"; };
-		EC930F391ED971D10042B6B0 /* UIImageView+MyWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MyWebCache.h"; sourceTree = "<group>"; };
-		EC930F3A1ED971D10042B6B0 /* UIImageView+MyWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MyWebCache.m"; sourceTree = "<group>"; };
 		EC930F3C1ED972F60042B6B0 /* iOS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS.png; sourceTree = "<group>"; };
-		EC930F3E1ED973250042B6B0 /* UIImageView+OtherWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+OtherWebCache.h"; sourceTree = "<group>"; };
-		EC930F3F1ED973250042B6B0 /* UIImageView+OtherWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+OtherWebCache.m"; sourceTree = "<group>"; };
 		ECA393BE1EC01B3F00A215FC /* CommonConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CommonConfig.xcconfig; sourceTree = "<group>"; };
 		ECA393BF1EC01B4E00A215FC /* DebugConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugConfig.xcconfig; sourceTree = "<group>"; };
 		ECA393C01EC01B5A00A215FC /* ReleaseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseConfig.xcconfig; sourceTree = "<group>"; };
@@ -253,12 +258,15 @@
 		EC91E1AD1ED29A7C008B99DB /* selector */ = {
 			isa = PBXGroup;
 			children = (
+				EC87A2031F14B54300C0FF93 /* nav_shanchu@2x.png */,
+				EC87A2051F14BC2700C0FF93 /* CLButton.h */,
+				EC87A2061F14BC2700C0FF93 /* CLButton.m */,
+				EC87A20E1F14D2C300C0FF93 /* MyView.h */,
+				EC87A20F1F14D2C300C0FF93 /* MyView.m */,
 				EC91E1AA1ED29A6E008B99DB /* Teacher.h */,
 				EC91E1AB1ED29A6E008B99DB /* Teacher.m */,
 				EC91E1AE1ED29AD9008B99DB /* Student.h */,
 				EC91E1AF1ED29AD9008B99DB /* Student.m */,
-				EC91E1B11ED29C21008B99DB /* Student+teach.h */,
-				EC91E1B21ED29C21008B99DB /* Student+teach.m */,
 				EC4F488F1E9CAEF60011348E /* DrawViewController.h */,
 				EC4F48901E9CAEF60011348E /* DrawViewController.m */,
 			);
@@ -268,10 +276,10 @@
 		EC930F381ED971740042B6B0 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				EC930F391ED971D10042B6B0 /* UIImageView+MyWebCache.h */,
-				EC930F3A1ED971D10042B6B0 /* UIImageView+MyWebCache.m */,
-				EC930F3E1ED973250042B6B0 /* UIImageView+OtherWebCache.h */,
-				EC930F3F1ED973250042B6B0 /* UIImageView+OtherWebCache.m */,
+				EC87A2081F14C3AD00C0FF93 /* UIImageView+MyWebCache.h */,
+				EC87A2091F14C3AD00C0FF93 /* UIImageView+MyWebCache.m */,
+				EC87A20A1F14C3AD00C0FF93 /* UIImageView+OtherWebCache.h */,
+				EC87A20B1F14C3AD00C0FF93 /* UIImageView+OtherWebCache.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -354,6 +362,7 @@
 				EC7ECEC31EA49B31003C4AA0 /* hongtaoA.png in Resources */,
 				EC930F3D1ED972F60042B6B0 /* iOS.png in Resources */,
 				EC4AE3311E95E09D00CDB83C /* loginSeccViewController.xib in Resources */,
+				EC87A2041F14B54300C0FF93 /* nav_shanchu@2x.png in Resources */,
 				EC73F42F1E6D580F0011CC92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,16 +422,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC930F401ED973250042B6B0 /* UIImageView+OtherWebCache.m in Sources */,
-				EC930F3B1ED971D10042B6B0 /* UIImageView+MyWebCache.m in Sources */,
 				EC4F48911E9CAEF60011348E /* DrawViewController.m in Sources */,
-				EC91E1B31ED29C21008B99DB /* Student+teach.m in Sources */,
 				EC6D99661EE155440096BB34 /* CLLLLLLViewController.m in Sources */,
 				EC3C1B211E7251C50017D289 /* checkTool.m in Sources */,
 				EC91E1B01ED29AD9008B99DB /* Student.m in Sources */,
 				EC4949CA1E71268F0031C091 /* loginViewModel.m in Sources */,
 				EC4A72B21E6EA2650048D95E /* Book.m in Sources */,
+				EC87A2101F14D2C300C0FF93 /* MyView.m in Sources */,
 				EC73F42C1E6D580F0011CC92 /* ViewController.m in Sources */,
+				EC87A20D1F14C3AD00C0FF93 /* UIImageView+OtherWebCache.m in Sources */,
 				EC73F4291E6D580F0011CC92 /* AppDelegate.m in Sources */,
 				EC4AE3301E95E09D00CDB83C /* loginSeccViewController.m in Sources */,
 				EC77C46A1EDEA39700181308 /* father.m in Sources */,
@@ -430,7 +438,9 @@
 				EC4A72B51E6EA2BA0048D95E /* HttpManager.m in Sources */,
 				EC91E1AC1ED29A6E008B99DB /* Teacher.m in Sources */,
 				EC4B3DC11E7A800600D3CAFA /* tabTestViewController.m in Sources */,
+				EC87A2071F14BC2700C0FF93 /* CLButton.m in Sources */,
 				EC6A41F71E9F22F900670EB5 /* llViewController.m in Sources */,
+				EC87A20C1F14C3AD00C0FF93 /* UIImageView+MyWebCache.m in Sources */,
 				EC596BEF1E6FE8D800EA0483 /* LoginViewController.m in Sources */,
 				EC6D99631EE155150096BB34 /* dsf.m in Sources */,
 				EC73F43D1E6D617E0011CC92 /* RequestViewModel.m in Sources */,

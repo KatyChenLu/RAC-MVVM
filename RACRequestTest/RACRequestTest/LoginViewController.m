@@ -50,6 +50,9 @@
     [clearBtn setImage:[UIImage imageNamed:@"hongtaoA"] forState:UIControlStateNormal];
     clearBtn.frame = CGRectMake(50, 5, 10, 10);
     
+    
+   
+    
 }
 
 - (void)loginSecc {

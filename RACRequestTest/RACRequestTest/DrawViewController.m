@@ -7,7 +7,7 @@
 //
 
 #import "DrawViewController.h"
-#import "Student+teach.h"
+
 #import "Teacher.h"
 typedef struct ListNode *list_pointer;
 typedef struct ListNode

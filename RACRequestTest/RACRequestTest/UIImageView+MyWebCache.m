@@ -8,8 +8,10 @@
 
 #import "UIImageView+MyWebCache.h"
 
+
 @implementation UIImageView (MyWebCache)
 - (void)sd_setImageWithURL:(NSURL *)url {
     self.image = [UIImage imageNamed:@"hongtaoA"];
+//    self.image = [UIImage sd_imageWithData:[NSData dataWithContentsOfURL:url]];
 }
 @end
