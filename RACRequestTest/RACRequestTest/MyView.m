@@ -24,18 +24,13 @@
     /*画圆角矩形*/
     float fw = 180;
     float fh = 280;
-    CGContextRef context = UIGraphicsGetCurrentContext();//一个不透明类型的Quartz 2D绘画环境,相当于一个画布,你可以在上面任意绘画
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetRGBFillColor(context, 0, 0, 0, 1.0);
     
+    CGContextSetRGBStrokeColor(context, 0, 1, 0, 1.0);
     
-  
-    
-    CGContextSetRGBFillColor(context, 1, 1, 1, 1.0);//填充颜色
-    
-    CGContextSetRGBStrokeColor(context, 0, 1, 0, 1.0);//画线笔的颜色
-    
-    CGContextSetLineWidth(context, 1.0);//线的宽度
+    CGContextSetLineWidth(context, 1.0);
 
-//    
     CGContextMoveToPoint(context, fw, fh-20);  // 开始坐标右边开始
     CGContextAddArcToPoint(context, fw, fh, fw-20, fh, 10);  // 右下角角度
     CGContextAddArcToPoint(context, 120, fh, 120, fh-20, 10); // 左下角角度
@@ -52,6 +47,7 @@
     
     /*图片*/
     UIImage *image = [UIImage imageNamed:@"nav_shanchu"];
+    
     [image drawInRect:CGRectMake(fw - 10, 240, 20, 20)];//在坐标中画出图片
 }
 
