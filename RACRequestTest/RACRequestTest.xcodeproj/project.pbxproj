@@ -30,6 +30,8 @@
 		EC77C46A1EDEA39700181308 /* father.m in Sources */ = {isa = PBXBuildFile; fileRef = EC77C4691EDEA39700181308 /* father.m */; };
 		EC77C46D1EDEA3C000181308 /* son.m in Sources */ = {isa = PBXBuildFile; fileRef = EC77C46C1EDEA3C000181308 /* son.m */; };
 		EC7ECEC31EA49B31003C4AA0 /* hongtaoA.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */; };
+		EC8283A21F1744F200B5E8B8 /* AView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8283A11F1744F200B5E8B8 /* AView.m */; };
+		EC8283A51F17451500B5E8B8 /* BView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8283A41F17451500B5E8B8 /* BView.m */; };
 		EC87A2041F14B54300C0FF93 /* nav_shanchu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC87A2031F14B54300C0FF93 /* nav_shanchu@2x.png */; };
 		EC87A2071F14BC2700C0FF93 /* CLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EC87A2061F14BC2700C0FF93 /* CLButton.m */; };
 		EC87A20C1F14C3AD00C0FF93 /* UIImageView+MyWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EC87A2091F14C3AD00C0FF93 /* UIImageView+MyWebCache.m */; };
@@ -88,6 +90,10 @@
 		EC77C46B1EDEA3C000181308 /* son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = son.h; sourceTree = "<group>"; };
 		EC77C46C1EDEA3C000181308 /* son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = son.m; sourceTree = "<group>"; };
 		EC7ECEC21EA49B31003C4AA0 /* hongtaoA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hongtaoA.png; sourceTree = "<group>"; };
+		EC8283A01F1744F200B5E8B8 /* AView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AView.h; sourceTree = "<group>"; };
+		EC8283A11F1744F200B5E8B8 /* AView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AView.m; sourceTree = "<group>"; };
+		EC8283A31F17451500B5E8B8 /* BView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BView.h; sourceTree = "<group>"; };
+		EC8283A41F17451500B5E8B8 /* BView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BView.m; sourceTree = "<group>"; };
 		EC87A2031F14B54300C0FF93 /* nav_shanchu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_shanchu@2x.png"; sourceTree = "<group>"; };
 		EC87A2051F14BC2700C0FF93 /* CLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLButton.h; sourceTree = "<group>"; };
 		EC87A2061F14BC2700C0FF93 /* CLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLButton.m; sourceTree = "<group>"; };
@@ -146,6 +152,10 @@
 				EC4AE32F1E95E09D00CDB83C /* loginSeccViewController.xib */,
 				EC4B3DBF1E7A800600D3CAFA /* tabTestViewController.h */,
 				EC4B3DC01E7A800600D3CAFA /* tabTestViewController.m */,
+				EC8283A01F1744F200B5E8B8 /* AView.h */,
+				EC8283A11F1744F200B5E8B8 /* AView.m */,
+				EC8283A31F17451500B5E8B8 /* BView.h */,
+				EC8283A41F17451500B5E8B8 /* BView.m */,
 				EC596BED1E6FE8D800EA0483 /* LoginViewController.h */,
 				EC596BEE1E6FE8D800EA0483 /* LoginViewController.m */,
 				EC73F42A1E6D580F0011CC92 /* ViewController.h */,
@@ -426,8 +436,10 @@
 				EC6D99661EE155440096BB34 /* CLLLLLLViewController.m in Sources */,
 				EC3C1B211E7251C50017D289 /* checkTool.m in Sources */,
 				EC91E1B01ED29AD9008B99DB /* Student.m in Sources */,
+				EC8283A51F17451500B5E8B8 /* BView.m in Sources */,
 				EC4949CA1E71268F0031C091 /* loginViewModel.m in Sources */,
 				EC4A72B21E6EA2650048D95E /* Book.m in Sources */,
+				EC8283A21F1744F200B5E8B8 /* AView.m in Sources */,
 				EC87A2101F14D2C300C0FF93 /* MyView.m in Sources */,
 				EC73F42C1E6D580F0011CC92 /* ViewController.m in Sources */,
 				EC87A20D1F14C3AD00C0FF93 /* UIImageView+OtherWebCache.m in Sources */,
