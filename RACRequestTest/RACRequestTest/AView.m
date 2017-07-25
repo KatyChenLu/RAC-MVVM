@@ -125,32 +125,34 @@
 //            NSLog(@"over");
 //        });
     
-    //创建一个队列,创建GCD定时器时使用
-    dispatch_queue_t queue = dispatch_queue_create("yuxuan", DISPATCH_QUEUE_SERIAL);
-    //创建一个GCD定时器(触发器)
-    //第四个参数:传入一个队列,决定了定时器回调任务执行方式.
-    dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
-    //dispatch_source_t其实本质是一个类,由于是局部变量,方法执行完,就会被释放.
-//    self.timer = timer;
-    //设置定时器
-    /*
-     第一个参数:给那个定时器设置
-     第二个参数:什么时候启动
-     第三个参数:间隔多久执行一次
-     第四个参数:设置精准度:0 代表最高精准(尽量让定时器精准), 大于0的的话代表是在多少秒内接受.
-     第四个参数存在意义:主要是为了提高程序性能, 设置越大,能减轻CPU的压力
-     注意:GCD定时器传入的时间都是纳秒
-     */
-    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0.0 * NSEC_PER_SEC);
-    //第一个参数:给那个定时器设置
-    //第二个参数:设置定时器回调block
-    //异步执行的,具有创建新线程的能力
-    //具体是否创建线程,创建几条线程是由定时任务创建时,传入的queue决定的
-    dispatch_source_set_event_handler(timer, ^{
-        NSLog(@"%@",[NSThread currentThread]);
-    });
-    //启动定时器
-    dispatch_resume(timer);
+//    //创建一个队列,创建GCD定时器时使用
+//    dispatch_queue_t queue = dispatch_queue_create("yuxuan", DISPATCH_QUEUE_SERIAL);
+//    //创建一个GCD定时器(触发器)
+//    //第四个参数:传入一个队列,决定了定时器回调任务执行方式.
+//    dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+//    //dispatch_source_t其实本质是一个类,由于是局部变量,方法执行完,就会被释放.
+////    self.timer = timer;
+//    //设置定时器
+//    /*
+//     第一个参数:给那个定时器设置
+//     第二个参数:什么时候启动
+//     第三个参数:间隔多久执行一次
+//     第四个参数:设置精准度:0 代表最高精准(尽量让定时器精准), 大于0的的话代表是在多少秒内接受.
+//     第四个参数存在意义:主要是为了提高程序性能, 设置越大,能减轻CPU的压力
+//     注意:GCD定时器传入的时间都是纳秒
+//     */
+//    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0.0 * NSEC_PER_SEC);
+//    //第一个参数:给那个定时器设置
+//    //第二个参数:设置定时器回调block
+//    //异步执行的,具有创建新线程的能力
+//    //具体是否创建线程,创建几条线程是由定时任务创建时,传入的queue决定的
+//    dispatch_source_set_event_handler(timer, ^{
+//        NSLog(@"%@",[NSThread currentThread]);
+//    });
+//    //启动定时器
+//    dispatch_resume(timer);
+//
+    
     
 }
 

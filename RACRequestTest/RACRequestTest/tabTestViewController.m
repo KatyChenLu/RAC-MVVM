@@ -52,13 +52,13 @@
 //    
 //    [btn addSubview:shanchu];
     
-    AView *view = [[AView alloc] initWithFrame:CGRectMake(100, 200, 200, 200)];
-    view.backgroundColor = [UIColor redColor];
-    [self.view addSubview:view];
-    
-    BView *bView = [[BView alloc] initWithFrame:CGRectMake(50, -50, 200, 200)];
-    bView.backgroundColor = [UIColor yellowColor];
-    [view addSubview:bView];
+//    AView *view = [[AView alloc] initWithFrame:CGRectMake(100, 200, 200, 200)];
+//    view.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:view];
+//    
+//    BView *bView = [[BView alloc] initWithFrame:CGRectMake(50, -50, 200, 200)];
+//    bView.backgroundColor = [UIColor yellowColor];
+//    [view addSubview:bView];
 }
 
 

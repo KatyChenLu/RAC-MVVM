@@ -45,7 +45,7 @@
     UINavigationController *navC3 = [[UINavigationController alloc] initWithRootViewController:thireVC];
     UINavigationController *navC4 = [[UINavigationController alloc] initWithRootViewController:fourVC];
     
-    tabVC.viewControllers        = @[navC2, navC1,navC3,navC4];
+    tabVC.viewControllers        = @[navC3, navC1,navC2,navC4];
     
     self.window.rootViewController = tabVC;
     //monitor constraint conflict
