@@ -59,6 +59,7 @@
 //    BView *bView = [[BView alloc] initWithFrame:CGRectMake(50, -50, 200, 200)];
 //    bView.backgroundColor = [UIColor yellowColor];
 //    [view addSubview:bView];
+    
 }
 
 
