@@ -37,6 +37,7 @@
 		EC87A20C1F14C3AD00C0FF93 /* UIImageView+MyWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EC87A2091F14C3AD00C0FF93 /* UIImageView+MyWebCache.m */; };
 		EC87A20D1F14C3AD00C0FF93 /* UIImageView+OtherWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EC87A20B1F14C3AD00C0FF93 /* UIImageView+OtherWebCache.m */; };
 		EC87A2101F14D2C300C0FF93 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC87A20F1F14D2C300C0FF93 /* MyView.m */; };
+		EC8EA4241F5FE3C400E63DA9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8EA4231F5FE3C400E63DA9 /* Person.m */; };
 		EC91E1AC1ED29A6E008B99DB /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1AB1ED29A6E008B99DB /* Teacher.m */; };
 		EC91E1B01ED29AD9008B99DB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1AF1ED29AD9008B99DB /* Student.m */; };
 		EC930F3D1ED972F60042B6B0 /* iOS.png in Resources */ = {isa = PBXBuildFile; fileRef = EC930F3C1ED972F60042B6B0 /* iOS.png */; };
@@ -103,6 +104,8 @@
 		EC87A20B1F14C3AD00C0FF93 /* UIImageView+OtherWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+OtherWebCache.m"; sourceTree = "<group>"; };
 		EC87A20E1F14D2C300C0FF93 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		EC87A20F1F14D2C300C0FF93 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		EC8EA4221F5FE3C400E63DA9 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		EC8EA4231F5FE3C400E63DA9 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		EC91E1AA1ED29A6E008B99DB /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		EC91E1AB1ED29A6E008B99DB /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 		EC91E1AE1ED29AD9008B99DB /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
@@ -221,6 +224,7 @@
 		EC73F4231E6D580E0011CC92 /* RACRequestTest */ = {
 			isa = PBXGroup;
 			children = (
+				EC8EA4211F5FE39900E63DA9 /* KVO */,
 				EC77C4641EDEA32800181308 /* jicheng */,
 				EC930F381ED971740042B6B0 /* Category */,
 				EC91E1AD1ED29A7C008B99DB /* selector */,
@@ -263,6 +267,15 @@
 				EC77C46C1EDEA3C000181308 /* son.m */,
 			);
 			name = jicheng;
+			sourceTree = "<group>";
+		};
+		EC8EA4211F5FE39900E63DA9 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				EC8EA4221F5FE3C400E63DA9 /* Person.h */,
+				EC8EA4231F5FE3C400E63DA9 /* Person.m */,
+			);
+			name = KVO;
 			sourceTree = "<group>";
 		};
 		EC91E1AD1ED29A7C008B99DB /* selector */ = {
@@ -454,6 +467,7 @@
 				EC6A41F71E9F22F900670EB5 /* llViewController.m in Sources */,
 				EC87A20C1F14C3AD00C0FF93 /* UIImageView+MyWebCache.m in Sources */,
 				EC596BEF1E6FE8D800EA0483 /* LoginViewController.m in Sources */,
+				EC8EA4241F5FE3C400E63DA9 /* Person.m in Sources */,
 				EC6D99631EE155150096BB34 /* dsf.m in Sources */,
 				EC73F43D1E6D617E0011CC92 /* RequestViewModel.m in Sources */,
 				EC73F4261E6D580E0011CC92 /* main.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Person.h"
 @interface tabTestViewController : UIViewController
-
+@property (nonatomic, strong)Person *person;
 @end
