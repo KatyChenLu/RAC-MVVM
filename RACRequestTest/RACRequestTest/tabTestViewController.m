@@ -24,6 +24,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     static int number = 0;
 //    self.person.name = [NSString stringWithFormat:@"%@",@(number++)];
+    //
 }
 
 - (void)didReceiveMemoryWarning {
