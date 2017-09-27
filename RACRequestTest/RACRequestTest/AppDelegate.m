@@ -36,6 +36,7 @@
     DrawViewController *fourVC = [[DrawViewController alloc] init];
     
     oneVC.title = @"request";
+    oneVC.tabBarItem.image = [UIImage imageNamed:@"首页选中"];
     twoVC.title = @"login";
     thireVC.title = @"table";
     fourVC.title = @"draw";
