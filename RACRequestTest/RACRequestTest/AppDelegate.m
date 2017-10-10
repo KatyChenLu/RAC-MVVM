@@ -70,8 +70,7 @@
         NSLog(@"目前所有的约束:\n%@",currentConstraints);
         NSLog(@"系统尝试打破的约束:\n%@",constraintToBreak);
     }];
-    
- 
+
     return YES;
 }
 
