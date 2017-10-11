@@ -44,6 +44,7 @@
     // Do any additional setup after loading the view.
     [self bindModel];
     self.testTextView.delegate = self;
+//    self.testTextView.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginSecc) name:@"login" object:nil];
     
     UIButton *clearBtn = [self.userNameTField valueForKey:@"_clearButton"];
