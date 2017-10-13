@@ -12,6 +12,7 @@
 #import "ZIKConstraintsGuard.h"
 #import "tabTestViewController.h"
 #import "DrawViewController.h"
+#import "llViewController.h"
 
 @interface AppDelegate ()
 
@@ -33,7 +34,7 @@
     
     tabTestViewController *thireVC = [[tabTestViewController alloc] init];
     
-    DrawViewController *fourVC = [[DrawViewController alloc] init];
+    llViewController *fourVC = [[llViewController alloc] init];
     
     oneVC.title = @"request";
     oneVC.tabBarItem.image = [UIImage imageNamed:@"首页选中"];
