@@ -41,6 +41,7 @@
 		EC91E1AC1ED29A6E008B99DB /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1AB1ED29A6E008B99DB /* Teacher.m */; };
 		EC91E1B01ED29AD9008B99DB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EC91E1AF1ED29AD9008B99DB /* Student.m */; };
 		EC930F3D1ED972F60042B6B0 /* iOS.png in Resources */ = {isa = PBXBuildFile; fileRef = EC930F3C1ED972F60042B6B0 /* iOS.png */; };
+		EC9DFDE81F909AD600E69CF1 /* BBDragTable.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9DFDE71F909AD600E69CF1 /* BBDragTable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +112,8 @@
 		EC91E1AE1ED29AD9008B99DB /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		EC91E1AF1ED29AD9008B99DB /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		EC930F3C1ED972F60042B6B0 /* iOS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS.png; sourceTree = "<group>"; };
+		EC9DFDE61F909AD100E69CF1 /* BBDragTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBDragTable.h; sourceTree = "<group>"; };
+		EC9DFDE71F909AD600E69CF1 /* BBDragTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBDragTable.m; sourceTree = "<group>"; };
 		ECA393BE1EC01B3F00A215FC /* CommonConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CommonConfig.xcconfig; sourceTree = "<group>"; };
 		ECA393BF1EC01B4E00A215FC /* DebugConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugConfig.xcconfig; sourceTree = "<group>"; };
 		ECA393C01EC01B5A00A215FC /* ReleaseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseConfig.xcconfig; sourceTree = "<group>"; };
@@ -231,6 +234,8 @@
 				ECA393BD1EC01B2D00A215FC /* Configs */,
 				EC73F4271E6D580F0011CC92 /* AppDelegate.h */,
 				EC73F4281E6D580F0011CC92 /* AppDelegate.m */,
+				EC9DFDE61F909AD100E69CF1 /* BBDragTable.h */,
+				EC9DFDE71F909AD600E69CF1 /* BBDragTable.m */,
 				EC6D99611EE155150096BB34 /* dsf.h */,
 				EC6D99621EE155150096BB34 /* dsf.m */,
 				EC6D99641EE155440096BB34 /* CLLLLLLViewController.h */,
@@ -468,6 +473,7 @@
 				EC87A20C1F14C3AD00C0FF93 /* UIImageView+MyWebCache.m in Sources */,
 				EC596BEF1E6FE8D800EA0483 /* LoginViewController.m in Sources */,
 				EC8EA4241F5FE3C400E63DA9 /* Person.m in Sources */,
+				EC9DFDE81F909AD600E69CF1 /* BBDragTable.m in Sources */,
 				EC6D99631EE155150096BB34 /* dsf.m in Sources */,
 				EC73F43D1E6D617E0011CC92 /* RequestViewModel.m in Sources */,
 				EC73F4261E6D580E0011CC92 /* main.m in Sources */,
