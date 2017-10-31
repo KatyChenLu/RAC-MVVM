@@ -17,15 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.person = [[Person alloc] init];
-    [self.person addObserver:self forKeyPath:@"name" options:0 context:nil];
+//    self.person = [[Person alloc] init];
+//    [self.person addObserver:self forKeyPath:@"name" options:0 context:nil];
+    
+    
+    
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    static int number = 0;
-//    self.person.name = [NSString stringWithFormat:@"%@",@(number++)];
-    //
-}
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    static int number = 0;
+////    self.person.name = [NSString stringWithFormat:@"%@",@(number++)];
+//    //
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
