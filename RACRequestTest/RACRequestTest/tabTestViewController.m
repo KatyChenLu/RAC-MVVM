@@ -9,21 +9,59 @@
 #import "tabTestViewController.h"
 
 
-@interface tabTestViewController ()
-
-@end
-
 @implementation tabTestViewController
-
+__weak NSString *string_weak_ = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.person = [[Person alloc] init];
 //    [self.person addObserver:self forKeyPath:@"name" options:0 context:nil];
     
+    // 场景 1
     
+    NSString *string = [NSString stringWithFormat:@"lulu"];
+    
+    string_weak_ = string;
+    
+    // 场景 2
+    
+    //    @autoreleasepool {
+    
+    //        NSString *string = [NSString stringWithFormat:@"lulu"];
+    
+    //        string_weak_ = string;
+    
+    //    }
+    
+    // 场景 3
+    
+    //    NSString *string = nil;
+    
+    //    @autoreleasepool {
+    
+    //        string = [NSString stringWithFormat:@"lulu"];
+    
+    //        string_weak_ = string;
+    
+    //    }
+    
+    NSLog(@"viewDidLoad      string: %@", string_weak_);
+    
+}
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    NSLog(@"viewWillAppear      string: %@", string_weak_);
     
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    NSLog(@"viewDidAppear      string: %@", string_weak_);
+    
+}
 //- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 //    static int number = 0;
 ////    self.person.name = [NSString stringWithFormat:@"%@",@(number++)];
