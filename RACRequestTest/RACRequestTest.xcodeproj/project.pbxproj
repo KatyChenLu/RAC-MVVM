@@ -20,6 +20,7 @@
 		EC6A41F71E9F22F900670EB5 /* llViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6A41F61E9F22F900670EB5 /* llViewController.m */; };
 		EC6D99631EE155150096BB34 /* dsf.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6D99621EE155150096BB34 /* dsf.m */; };
 		EC6D99661EE155440096BB34 /* CLLLLLLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6D99651EE155440096BB34 /* CLLLLLLViewController.m */; };
+		EC70BD5C1FB2B08700B531FC /* UIControl+Interval.m in Sources */ = {isa = PBXBuildFile; fileRef = EC70BD5B1FB2B08600B531FC /* UIControl+Interval.m */; };
 		EC73F4261E6D580E0011CC92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F4251E6D580E0011CC92 /* main.m */; };
 		EC73F4291E6D580F0011CC92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F4281E6D580F0011CC92 /* AppDelegate.m */; };
 		EC73F42C1E6D580F0011CC92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC73F42B1E6D580F0011CC92 /* ViewController.m */; };
@@ -75,6 +76,8 @@
 		EC6D99621EE155150096BB34 /* dsf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dsf.m; sourceTree = "<group>"; };
 		EC6D99641EE155440096BB34 /* CLLLLLLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLLLLLViewController.h; sourceTree = "<group>"; };
 		EC6D99651EE155440096BB34 /* CLLLLLLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLLLLLViewController.m; sourceTree = "<group>"; };
+		EC70BD5A1FB2B08600B531FC /* UIControl+Interval.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+Interval.h"; sourceTree = "<group>"; };
+		EC70BD5B1FB2B08600B531FC /* UIControl+Interval.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Interval.m"; sourceTree = "<group>"; };
 		EC73F4211E6D580E0011CC92 /* RACRequestTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACRequestTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC73F4251E6D580E0011CC92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC73F4271E6D580F0011CC92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 				EC8283A11F1744F200B5E8B8 /* AView.m */,
 				EC8283A31F17451500B5E8B8 /* BView.h */,
 				EC8283A41F17451500B5E8B8 /* BView.m */,
+				EC70BD5A1FB2B08600B531FC /* UIControl+Interval.h */,
+				EC70BD5B1FB2B08600B531FC /* UIControl+Interval.m */,
 				EC596BED1E6FE8D800EA0483 /* LoginViewController.h */,
 				EC596BEE1E6FE8D800EA0483 /* LoginViewController.m */,
 				EC73F42A1E6D580F0011CC92 /* ViewController.h */,
@@ -456,6 +461,7 @@
 				EC91E1B01ED29AD9008B99DB /* Student.m in Sources */,
 				EC8283A51F17451500B5E8B8 /* BView.m in Sources */,
 				EC4949CA1E71268F0031C091 /* loginViewModel.m in Sources */,
+				EC70BD5C1FB2B08700B531FC /* UIControl+Interval.m in Sources */,
 				EC4A72B21E6EA2650048D95E /* Book.m in Sources */,
 				EC8283A21F1744F200B5E8B8 /* AView.m in Sources */,
 				EC87A2101F14D2C300C0FF93 /* MyView.m in Sources */,
