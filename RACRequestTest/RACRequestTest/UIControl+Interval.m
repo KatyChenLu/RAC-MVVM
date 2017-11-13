@@ -11,7 +11,6 @@
 
 @implementation UIControl (Interval)
 
-
 + (void)load{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
